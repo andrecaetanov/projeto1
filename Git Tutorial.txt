@@ -35,5 +35,8 @@ GIT TUTORIAL
 11- Mescle a master com as alterações enviadas para sua branch (apenas quando solicitado pelo SM):
 	git merge suabranch
 
-12- Puxe as alterações feitas pela equipe e atualize seu repositório:
+12- Confirme o merge (apenas quando solicitado pelo SM):
+	git push origin master
+
+13- Puxe as alterações feitas pela equipe e atualize seu repositório:
 	git pull
