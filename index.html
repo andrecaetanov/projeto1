@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        <meta name="viewport" content="width = device-width, initial-scale = 1">
+        <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+
+       
+    
+    </head>
+    <body id="pagina">
+      
+            <nav class="navbar navbar-default navbar-inverse" role="navigation">
+                <div class="container-fluid">
+                  <div class="navbar-header grouped">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                     data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-left"><img id="logo-navbar" src="img/Yoshi.png"></a>
+            
+                  </div>
+              
+            
+                  <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                 
+                      <li class="navbar-brand">Yoshi's Store</li>
+                      <li ><a href="#">Pagina Inicial</a></li>
+                      <li><a href="#">Buscar</a></li>
+                      <li><a href="#">Contato</a></li>
+                      <li class="active"><a href="#">Localizacao</a></li>
+            
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            
+     
+
+        <div class="container">
+            <h2 id="titulo" >Missao Aceita: Encontre a Yoshi's Store!</h2>
+            <h3 id="texto">Olá aventureiro, tenho uma tarefa muito especial para você. Siga o mapa anexado neste pergaminho
+            e encontrará tesouros além da sua imaginação! </h3>
+        </div>
+
+        <div id="map" class="container"></div>
+            
+        <script>
+        function initMap() {
+            var uluru = {lat: -21.7642, lng: -43.3496};
+            var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: uluru
+            });
+            var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+            });
+        }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDsgAUf-w2b-AHm8uK_i-X-f6p23tE51M&callback=initMap">
+        </script>
+        
+        <h3 id="endereco">Rua Teste, numero 0, Centro</h3>
+        <script src="jquery.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
