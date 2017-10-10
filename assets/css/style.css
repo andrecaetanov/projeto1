@@ -1,0 +1,98 @@
+.navbar-default {
+	width: 100%;
+	font-size: 20px;
+}
+
+.navbar {
+	background-color: rgba(0, 177, 0, 0.85);
+}
+
+.navbar-brand {
+	font-size: 20px;
+}
+
+#yoshi, #produto, #contato, #localizacao {
+	color: #000;
+}
+
+body {
+	background-image: url(../img/mass.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+html, body {
+	height: 100%;
+	font-size: 100%
+}
+
+div h1 {
+	color: #000;
+}
+
+.titulo-principal {
+	font-size: 200%;
+	text-align: center;
+}
+
+.contato-wrapper {
+	background-color: rgba(255, 255, 255, .7);
+	border-radius: 10px;
+	text-shadow: 1px 1px #CCC;
+	box-shadow: 0 0 1em #444;
+	margin-bottom: 1.2em;
+}
+
+#contato-enviar {
+	margin-bottom: 1.1em;
+	float: right;
+	box-shadow: 0 0 1em #444;
+}
+
+.contato-formulario {
+	color: #000;
+}
+
+#div-formulario {
+	width: auto;
+	font-size: 0.9rem;
+}
+
+#div-nome {
+	padding: 0px;
+	padding-right: 0.5em;
+}
+
+#div-email {
+	padding: 0px;
+}
+
+.form-control {
+	box-shadow: 0 0 1em #888;
+}
+
+.div-contato {
+	width: 100%;
+	text-shadow: 1px 1px #CCC;
+	color: #000;
+}
+
+.telefone {
+	color: #000;
+}
+
+.div-telefones {
+	width: 100%;
+}
+
+.logo-whatsapp {
+	width: 1em;
+	margin: 0.2em;
+	padding-bottom: 0.5em; 
+}
+
+#endereco-telefone {
+	margin-bottom: 0;
+}
