@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+        <meta name="viewport" content="width = device-width, initial-scale = 1">
+        <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+
+       
+    
+    </head>
+    <body id="pagina">
+      
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid" id="navegacao">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span> 
+            </button>
+            <a class="navbar-brand"><img src="../assets/img/Yoshi.png"></a>
+            <div class="navbar-brand" id="logo">Yoshi's Store</div>
+          </div>
+          <div class="collapse navbar-collapse pull-right" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class=""><a href="#">Pagina Inicial</a></li>
+              <li><a href="#">Contato</a></li>
+              <li><a class="active" href="#">Localizacao</a></li> 
+              <li><a href="#">Buscar</a></li> 
+            </ul>
+          </div>
+        </div>
+      </nav>
+            
+     
+
+        <div class="container">
+            <h2 id="titulo" >Missao Aceita: Encontre a Yoshi's Store!</h2>
+            <h3 id="texto">Olá aventureiro, tenho uma tarefa muito especial para você. Siga o mapa anexado neste pergaminho
+            e encontrará tesouros além da sua imaginação! </h3>
+        </div>
+
+        <div id="map" class="container"></div>
+            
+        <script>
+        function initMap() {
+            var uluru = {lat: -21.7642, lng: -43.3496};
+            var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: uluru
+            });
+            var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+            });
+        }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDsgAUf-w2b-AHm8uK_i-X-f6p23tE51M&callback=initMap">
+        </script>
+        
+        <h3 id="endereco">Rua Teste, numero 0, Centro</h3>
+        <script src="../assets/js/jquery.js"></script>
+        <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
