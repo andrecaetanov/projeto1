@@ -16,7 +16,7 @@
 }
 
 body {
-	background-image: url(../img/mass.jpg);
+	background-image: url(../img/fundo2.png);
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -38,7 +38,7 @@ div h1 {
 }
 
 .contato-wrapper {
-	background-color: rgba(255, 255, 255, .7);
+	background-color: rgba(255, 255, 255, .6);
 	border-radius: 10px;
 	text-shadow: 1px 1px #CCC;
 	box-shadow: 0 0 1em #444;
@@ -96,4 +96,8 @@ div h1 {
 
 #endereco-telefone {
 	margin-bottom: 0;
+}
+
+#contato-mensagem {
+	resize: none;
 }
