@@ -9,7 +9,7 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 
 </head>
-<body>
+<body class="pagina-inicial">
   <!-- __________________________________________________________________________________________________________________________________ -->
   <header>
     <!-- Barra de navegação -->
@@ -92,66 +92,66 @@
   <main>
     <section class="produtos-recentes">
       <!-- Produtos -->  
-      <div id="wrapper" class="container">
+      <div id="wrapper-produtos" class="container">
         <div class="row">
           <div class="col-md-12">                         
             <div class="row">
               <div class="col-md-12">
-                <h4 class="title">
+                <h4 class="titulo">
                   <span class="text">Adicionados <strong>recentemente</strong></span>
                 </h4>
                 <div>
                   <!-- Imagens dos produtos -->
                   <ul class="thumbnails">                       
                     <li class="col-md-4">
-                      <div class="product-box">
+                      <div class="caixa-produtos">
                         <span></span>
                         <p><a href="#"><img src="../assets/img/produtos/1.jpg" alt="The Witcher 3" class="img-responsive" /></a></p>
-                        <a href="#" class="title">The Witcher 3</a><br/>
-                        <a href="#" class="category">Jogo PC</a>
-                        <p class="price">R$50,25</p>
+                        <a href="#" class="titulo">The Witcher 3</a><br/>
+                        <a href="#" class="categoria">Jogo PC</a>
+                        <p class="preco">R$50,25</p>
                       </div>
                     </li>
                     <li class="col-md-4">
-                      <div class="product-box">
+                      <div class="caixa-produtos">
                         <p><a href="#"><img src="../assets/img/produtos/2.jpg" alt="Mega Drive" class="img-responsive" /></a></p>
-                        <a href="#" class="title">Mega Drive</a><br/>
-                        <a href="#" class="category">Console</a>
-                        <p class="price">R$99,99</p>
+                        <a href="#" class="titulo">Mega Drive</a><br/>
+                        <a href="#" class="categoria">Console</a>
+                        <p class="preco">R$99,99</p>
                       </div>
                     </li>
                     <li class="col-md-4">
-                      <div class="product-box">
+                      <div class="caixa-produtos">
                         <p><a href="#"><img src="../assets/img/produtos/3.jpg" alt="Super Luigi U" class="img-responsive"/></a></p>
-                        <a href="#" class="title">Super Luigi U</a><br/>
-                        <a href="#" class="category">Jogo Wii U</a>
-                        <p class="price">R$85,99</p>
+                        <a href="#" class="titulo">Super Luigi U</a><br/>
+                        <a href="#" class="categoria">Jogo Wii U</a>
+                        <p class="preco">R$85,99</p>
                       </div>
                     </li>
                     <li class="col-md-4">
-                      <div class="product-box">
+                      <div class="caixa-produtos">
                         <p><a href="#"><img src="../assets/img/produtos/4.jpg" alt="Pokemon Crystal Version" class="img-responsive" /></a></p>
-                        <a href="#" class="title">Pokemon Crystal Version</a><br/>
-                        <a href="#" class="category">Jogo GameBoy Color</a>
-                        <p class="price">R$49,99</p>
+                        <a href="#" class="titulo">Pokemon Crystal Version</a><br/>
+                        <a href="#" class="categoria">Jogo GameBoy Color</a>
+                        <p class="preco">R$49,99</p>
                       </div>
                     </li>
                   </ul>
                   <ul class="thumbnails">
                     <li class="col-md-4">
-                      <div class="product-box">
+                      <div class="caixa-produtos">
                         <p><a href="#"><img src="../assets/img/produtos/5.jpg" alt="GTA 5" class="img-responsive"/></a></p>
-                        <a href="#" class="title">GTA 5</a><br/>
-                        <a href="#" class="category">Jogo PS3</a>
-                        <p class="price">R$99,90</p>
+                        <a href="#" class="titulo">GTA 5</a><br/>
+                        <a href="#" class="categoria">Jogo PS3</a>
+                        <p class="preco">R$99,90</p>
                       </div>
                     </li>
                     <li class="col-md-4">
-                      <div class="product-box">
+                      <div class="caixa-produtos">
                         <p><a href="#"><img src="../assets/img/produtos/6.jpg" alt="Playstation 4" class="img-responsive" /></a></p>
-                        <a href="#" class="title">Playstation 4</a><br/>
-                        <a href="#" class="category">Console</a>
-                        <p class="price">R$1299,99</p>
+                        <a href="#" class="titulo">Playstation 4</a><br/>
+                        <a href="#" class="categoria">Console</a>
+                        <p class="preco">R$1299,99</p>
                       </div>
                     </li>
                   </ul>
@@ -166,8 +166,62 @@
       <!-- Fim dos produtos -->
     </section>
   </main>
-  <footer></footer>
-  <script src="../assets/js/jquery-3.0.0.slim.min.js"></script>
+  <!-- __________________________________________________________________________________________________________________________________ -->
+  <!-- Rodapé -->
+  <footer>
+    <!-- Botão de retornar ao topo -->
+    <div class="returnar-ao-topo">
+      <button type="button" class="btn btn-default btn-lg">
+        <i class="fa fa-angle-up fa-2x"></i>
+      </button>
+    </div>
+    <!-- Fim botão de retornar ao topo -->
+    <div class="container">
+      <div class="footer-principal">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="logo"><img src="../assets/img/logo/Yoshis_Store_-_Logo.jpg"></div>
+          </div>
+          <div class="col-sm-2">
+            <h5>Navegação</h5>
+            <ul>
+              <li><a href="#">Página Inicial</a></li>
+              <li><a href="#">Produtos</a></li>
+              <li><a href="#">Administração</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <h5>Quem somos</h5>
+            <ul>
+              <li><a href="#">Contatos</a></li>
+              <li><a href="#">Sobre nós</a></li>
+              <li><a href="#">Localização</a></li>
+            </ul>
+          </div>
+          <!-- Container vazio para deslocamento -->
+          <div class="col-sm-2">
+          </div>
+          <!-- Fim container vazio para deslocamento -->
+          <div class="col-sm-3">
+            <div class="redes-sociais">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Segunda parte do footer -->
+    <div class="footer-copyright">
+      <p>Yoshi's Store © 2017 - TODOS OS DIREITOS RESERVADOS </p>
+    </div>
+    <!-- Fim da segunda parte do footer -->
+  </footer>
+  <!-- Fim rodapé -->
+  <script src="../assets/js/jquery-1.9.1.js"></script>
   <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../assets/js/footer.js"></script>
+  <script src="https://use.fontawesome.com/6f8b7aea2d.js"></script>
 </body>
 </html>
