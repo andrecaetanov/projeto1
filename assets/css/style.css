@@ -70,12 +70,13 @@ body{
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus,
 .navbar-inverse .navbar-nav>.active>a:hover {
-    color: #fff;
+    color: #E62424;
     background-color: #09520B;
 }
 
 .navbar-inverse .navbar-nav>li>a {
-    color: #FFF;
+    color: rgba(192, 255, 0, 1);
+    font-size: 110%;
 }
 
 
@@ -114,5 +115,21 @@ body{
 
 #logo{
     padding: 16px;
-    color: #6CF015;
+    color: rgba(192, 255, 0, 1);
+}
+
+
+/* Aqui começa os estilos do dropdown*/
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background: 0 0;
+    border: 0;
 }
