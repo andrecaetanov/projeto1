@@ -10,71 +10,88 @@
     
     </head>
     <body id="pagina">
-      
-      <nav class="navbar navbar-inverse">
-        <div class="container-fluid" id="navegacao">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span> 
-            </button>
-            <a class="navbar-brand"><img src="../assets/img/Yoshi.png"></a>
-            <div class="navbar-brand" id="logo">Yoshi's Store</div>
-          </div>
-          <div class="collapse navbar-collapse pull-right" id="myNavbar">
-            <ul class="nav navbar-nav">
-              <!-- aqui começa o dropdown !-->
-              <li class="nav-item dropdown">          
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Produtos
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Consoles</a>
-                  <a class="dropdown-item" href="#">Jogos PS4</a>
-                  <a class="dropdown-item" href="#">Jogos X-ONE</a>
-                  <a class="dropdown-item" href="#">Jogos Switch</a>
-                </div>
-              </li> 
-              <!-- aqui termina o dropdown !-->
-              <li class=""><a href="#">Pagina Inicial</a></li>
-              <li><a href="#">Contato</a></li>
-              <li><a class="active" href="#">Localizacao</a></li> 
-              <li><a href="#">Buscar</a></li> 
-            </ul>
-          </div>
+
+      <!-- COMEÇO DO MENU DE NAVEGAÇÃO -->
+      <div class="container-header">
+        <div class="box">
+          <header>
+            <nav id='cssmenu'>
+              <div class="navbar-header">
+                <a class="navbar-brand"><img src="../assets/img/Yoshi.png"></a>
+                <div class="navbar-brand" id="logo">Yoshi's Store</div>
+              </div>
+              <div id="head-mobile"></div>
+              <div class="button"></div>
+              <ul class="conteudo">
+                <li><a href='#'>Home</a></li>
+                <li><a href='#'>Sobre Nós</a></li>
+                <li><a href='#'>Produtos</a>
+                   <ul>
+                      <li><a href='#' id="consoles">Consoles</a>
+                         <ul>
+                            <li><a href='#'>Playstation</a></li>
+                            <li><a href='#'>Xbox</a></li>
+                            <li><a href="">Nintendo</a></li>
+                         </ul>
+                      </li>
+                      <li><a href='#' id="jogos">Jogos</a>
+                         <ul>
+                            <li><a href='#'>Playstation</a></li>
+                            <li><a href='#'>Xbox</a></li>
+                            <li><a href="">Nintendo</a></li>
+                         </ul>
+                      </li>
+                   </ul>
+                </li>
+                <li class='active'><a href='#'>Localização</a></li>
+                <li><a href='#'>Contato</a></li>
+                <li>
+                  <div class="form-group">
+                    <form class="form-inline my-2 my-lg-0"  id="buscar">
+                      <input class="form-control mr-sm-2 campo-busca container" type="text" placeholder="Buscar" aria-label="Search">
+                      <button type="button" class="btn btn-default btn-busca" aria-label="Buscar" type="submit">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                      </button>
+                    </form>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </header>
         </div>
-      </nav>
-            
+      </div>
+      <!-- FIM DO MENU DE NAVEGAÇÃO-->
      
 
-        <div class="container">
-            <h2 id="titulo" >Missao Aceita: Encontre a Yoshi's Store!</h2>
-            <h3 id="texto">Olá aventureiro, tenho uma tarefa muito especial para você. Siga o mapa anexado neste pergaminho
-            e encontrará tesouros além da sua imaginação! </h3>
-        </div>
+      <div class="container">
+          <h2 id="titulo" >Missao Aceita: Encontre a Yoshi's Store!</h2>
+          <h3 id="texto">Olá aventureiro, tenho uma tarefa muito especial para você. Siga o mapa anexado neste pergaminho
+          e encontrará tesouros além da sua imaginação! </h3>
+      </div>
 
-        <div id="map" class="container"></div>
-            
-        <script>
-        function initMap() {
-            var uluru = {lat: -21.7642, lng: -43.3496};
-            var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 15,
-            center: uluru
-            });
-            var marker = new google.maps.Marker({
-            position: uluru,
-            map: map
-            });
-        }
-        </script>
-        <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDsgAUf-w2b-AHm8uK_i-X-f6p23tE51M&callback=initMap">
-        </script>
-        
-        <h3 id="endereco">Rua Teste, numero 0, Centro</h3>
-        <script src="../assets/js/jquery.js"></script>
-        <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-    </body>
+      <div id="map" class="container"></div>
+          
+      <script>
+      function initMap() {
+          var uluru = {lat: -21.7642, lng: -43.3496};
+          var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+          });
+          var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+          });
+      }
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDsgAUf-w2b-AHm8uK_i-X-f6p23tE51M&callback=initMap">
+      </script>
+      
+      <h3 id="endereco">Rua Teste, numero 0, Centro</h3>
+      <script src="../assets/js/jquery.js"></script>
+      <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+      <script src="../assets/bootstrap/js/bootstrap-dropdown.js"></script>
+      <script type="text/javascript" src="../assets/js/menu-navegacao.js"></script>
+  </body>
 </html>
