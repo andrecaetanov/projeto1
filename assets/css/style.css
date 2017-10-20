@@ -1,22 +1,31 @@
 
 #map{
-    margin-top: 10%;
+    margin-top: 0%;
     height: 500px;
     width: 60%;
     
 }
 
-body{
-    background-image: url(../img/wow2.jpg);
+#body-localizacao{
+    background-color: #000;
     background-size: cover;
     background-position: 25% 50%;
     height: 50%;    
    
 }
 
+.texto{
+    color: #FFF;
+    margin-top: 10%;
+    margin-top: 5%;
+    margin-bottom:5%; 
+    text-align: center;
+    font-size: 170%;
+}
+
 @media(max-width: 768px){
-    body{
-        background-image: url(../img/wow2.jpg);
+    #body-localizacao{
+        background-color: #000;
         background-size: cover;
         background-position: 60% 50%;
         height: 50%;
@@ -25,7 +34,10 @@ body{
     #map{
         height: 300px;
         width: 90%
+    }
 
+    .texto{
+        font-size: 120%;
     }
 }
 
@@ -38,12 +50,14 @@ body{
     font-size: 300%   
 }
 
+
+
 @media(max-width: 425px){
     #titulo{
         font-size: 150%;
     }
 
-    #texto{
+    .texto{
         font-size: 120%;
     }
 
@@ -55,18 +69,7 @@ body{
 
 }
 
-#texto{
-    color: #FFF;
-    margin-top: 10%;
-    text-align: center;
-}
 
-#endereco{
-    color: #FFF;
-    margin-top: 5%;
-    margin-bottom:5%; 
-    text-align: center;
-}
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus,
 .navbar-inverse .navbar-nav>.active>a:hover {
