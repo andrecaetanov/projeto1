@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 22-Out-2017 às 12:55
+-- Generation Time: 22-Out-2017 às 20:58
 -- Versão do servidor: 10.1.26-MariaDB
 -- PHP Version: 7.1.9
 
@@ -46,7 +46,9 @@ CREATE TABLE `produto` (
   `descricao` mediumtext,
   `data_lancamento` date DEFAULT NULL,
   `plataforma_id` int(11) DEFAULT NULL,
-  `tipo_id` int(11) DEFAULT NULL
+  `tipo_id` int(11) DEFAULT NULL,
+  `quantidade_estoque` int(11) DEFAULT NULL,
+  `usado` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
