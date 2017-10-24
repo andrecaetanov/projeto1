@@ -54,6 +54,7 @@ CREATE TABLE `produto` (
   `plataforma_id` int(11) NOT NULL,
   `tipo_id` int(11) NOT NULL,
   `usado` tinyint(1) DEFAULT '0',
+  `disponivel` tinyint(1) DEFAULT '1',
   PRIMARY KEY (`id`),
   KEY `plataforma_id` (`plataforma_id`),
   KEY `tipo_id` (`tipo_id`),
@@ -127,4 +128,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-10-22 15:56:16
+-- Dump completed on 2017-10-24  2:37:38
