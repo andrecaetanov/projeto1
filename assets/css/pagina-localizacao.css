@@ -1,0 +1,681 @@
+
+#map{
+    margin-top: 0%;
+    height: 500px;
+    width: 60%;
+    
+}
+
+#body-localizacao{
+    background-color: #000;
+    background-size: cover;
+    background-position: 25% 50%;
+    height: 50%;    
+   
+}
+
+.texto{
+    color: #FFF;
+    margin-top: 10%;
+    margin-top: 5%;
+    margin-bottom:5%; 
+    text-align: center;
+    font-size: 170%;
+}
+
+@media(max-width: 768px){
+    #body-localizacao{
+        background-color: #000;
+        background-size: cover;
+        background-position: 60% 50%;
+        height: 50%;
+    }
+
+    #map{
+        height: 300px;
+        width: 90%
+    }
+
+    .texto{
+        font-size: 150%;
+    }
+}
+
+
+
+#titulo{
+    color: #FFF; 
+    text-align: center;
+    margin-top: 5%;
+    font-size: 300%   
+}
+
+
+
+@media(max-width: 425px){
+    #titulo{
+        font-size: 150%;
+    }
+
+    .texto{
+        font-size: 120%;
+    }
+
+    #map{
+        height: 300px;
+        width: 90%
+
+    }
+
+}
+
+
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover {
+    color: #E62424;
+    background-color: #09520B;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: rgba(192, 255, 0, 1);
+    font-size: 110%;
+}
+
+
+
+.navbar-brand {
+    font-family: "Bangers";
+    font-size: 200%;
+    padding: 0px;
+}
+
+.active{
+    background-color: rgba(12, 121, 12, 0.96)
+}   
+
+
+.navbar-brand>img {
+    height: 100%;
+    padding: 0px;
+    width: auto;
+    margin-left: 1rem;
+}
+
+#navegacao{
+    background-color: rgba(17, 160, 17, 0.96);
+    border-color: rgba(18, 117, 18, 0.75);
+}
+
+
+
+#logo-navbar{
+    width: 10%;
+    height: 100%;
+}
+
+#logo{
+    padding: 16px;
+    color: rgba(192, 255, 0, 1);
+}
+
+
+/* Aqui começa os estilos do dropdown*/
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background: 0 0;
+    border: 0;
+}
+
+#buscar {
+    padding: 0.5em;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+/***************************************************************************************/
+/********************************COMEÇO DO CSS DO HEADER********************************/
+/***************************************************************************************/
+
+
+.container-header {
+    width: 100%;
+    padding: 0;
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+header  {
+    position:relative;
+    width:100%;
+    background:#333;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+nav {
+    position:absolute;
+    margin:0 auto;
+    width: 100%;
+}
+
+.navbar-header {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.button + ul {
+    margin-top: 10px;
+}
+
+#consoles ul {
+    padding-left: 0;
+}
+
+#cssmenu, #cssmenu ul, #cssmenu ul li, #cssmenu ul li a, #cssmenu #head-mobile {
+    border:0;
+    list-style:none;
+    line-height:1;
+    display:inline-block;
+    position:relative;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+#cssmenu:after, #cssmenu > ul:after {
+    content:".";
+    display:block;
+    clear:both;
+    visibility:hidden;
+    line-height:0;
+    height:0
+}
+
+#cssmenu #head-mobile {
+    display:none
+}
+
+#cssmenu {
+    font-family:sans-serif;
+    background:#333
+}
+
+#cssmenu > ul > li {
+    float:left
+}
+
+#cssmenu > ul > li > a {
+    padding:17px;
+    font-size:12px;
+    letter-spacing:1px;
+    text-decoration:none;
+    color:#ddd;
+    font-weight:700;
+}
+
+#cssmenu > ul > li:hover > a, #cssmenu ul li.active a {
+    color:#fff
+}
+
+#cssmenu > ul  li:hover, #cssmenu ul li.active:hover, #cssmenu ul li.active, #cssmenu ul li.has-sub.active:hover {
+    background:#448D00!important;
+    -webkit-transition:background .3s ease;
+    -ms-transition:background .3s ease;
+    transition:background .3s ease;
+}
+
+#cssmenu > ul > li.has-sub > a {
+    padding-right:30px
+}
+
+#cssmenu > ul > li.has-sub > a:after {
+    position:absolute;
+    top:22px;
+    right:11px;
+    width:8px;
+    height:2px;
+    display:block;
+    background:#ddd;
+    content:''
+}
+
+#cssmenu > ul > li.has-sub > a:before {
+    position:absolute;
+    top:19px;
+    right:14px;
+    display:block;
+    width:2px;
+    height:8px;
+    background:#ddd;
+    content:'';
+    -webkit-transition:all .25s ease;
+    -ms-transition:all .25s ease;
+    transition:all .25s ease;
+}
+
+#cssmenu > ul > li.has-sub:hover > a:before {
+    top:23px;
+    height:0;
+}
+
+#cssmenu ul ul {
+    position:absolute;
+    left:-9999px;
+}
+
+#cssmenu ul ul li {
+    height:0;
+    -webkit-transition:all .25s ease;
+    -ms-transition:all .25s ease;
+    background:#333;
+    transition:all .25s ease;
+}
+
+#cssmenu form:hover {
+        background:#333!important;
+}
+
+#cssmenu li:hover > ul {
+    left:auto;
+}
+
+#cssmenu li:hover > ul > li {
+    height:35px;
+}
+
+#cssmenu ul ul ul {
+    margin-left:100%;
+    top:0;
+    padding-left: 0;
+    padding-top: 1rem;
+}
+
+#cssmenu ul ul li a {
+    border-bottom:1px solid rgba(150,150,150,0.15);
+    padding:11px 15px;
+    width:170px;
+    font-size:12px;
+    text-decoration:none;
+    color:#ddd;
+    font-weight:400;
+}
+
+#cssmenu ul ul li:last-child > a, #cssmenu ul ul li.last-item > a {
+    border-bottom:0;
+}
+
+#cssmenu ul ul li:hover > a, #cssmenu ul ul li a:hover {
+    color:#fff;
+}
+
+#cssmenu ul ul li.has-sub > a:after {
+    position:absolute;
+    top:16px;
+    right:11px;
+    width:8px;
+    height:2px;
+    display:block;
+    background:#ddd;
+    content:''
+}
+
+#cssmenu ul ul li.has-sub > a:before {
+    position:absolute;
+    top:13px;
+    right:14px;
+    display:block;
+    width:2px;
+    height:8px;
+    background:#ddd;
+    content:'';
+    -webkit-transition:all .25s ease;
+    -ms-transition:all .25s ease;
+    transition:all .25s ease
+}
+
+#cssmenu ul ul > li.has-sub:hover > a:before {
+    top:17px;
+    height:0
+}
+
+#cssmenu ul ul li.has-sub:hover, #cssmenu ul li.has-sub ul li.has-sub ul li:hover {
+    background:#363636;
+}
+
+#cssmenu ul ul ul li.active a {
+    border-left:1px solid #333
+}
+
+#cssmenu > ul > li.has-sub > ul > li.active > a, #cssmenu > ul ul > li.has-sub > ul > li.active> a {
+    border-top:1px solid #333
+}
+
+@media screen and (max-width:1000px){
+    .campo-busca {
+        width: auto;
+        float: left;
+    }
+
+    .form-group {
+        margin-top: 1em;
+    }
+
+    #buscar {
+        display:inline;
+    }
+
+    .logo {
+        position:absolute;
+        top:0;
+        left: 0;
+        width:100%;
+        height:46px;
+        text-align:center;
+        padding:10px 0 0 0 ;
+        float:none
+    }
+
+    .logo2 {
+        display:none
+    }
+
+    nav {
+        width:100%;
+        display: -webkit-flex;
+        display: flex;
+        vertical-align: top;
+    }
+
+    #cssmenu {
+        width:100%
+    }
+
+    #cssmenu ul {
+        width:100%;
+        display:none
+    }
+
+    #cssmenu ul li {
+        width:100%;
+        border-top:1px solid #444
+    }
+
+    #cssmenu ul li:hover {
+        background:#363636;
+    }
+
+    #cssmenu ul ul li, #cssmenu li:hover > ul > li {
+        height:auto;
+    }
+
+    #cssmenu ul li a, #cssmenu ul ul li a {
+        width:100%;
+        border-bottom:0
+    }
+
+    #cssmenu > ul > li {
+        float:none;
+    }
+
+    #cssmenu ul ul li a {
+        padding-left:25px;
+    }
+
+    #cssmenu > ul > .closed:hover {
+        background: #333!important;
+    }
+
+    #cssmenu form:hover {
+        background:#333!important;
+    }
+
+    #cssmenu ul ul li {
+        background:#333!important;
+    }
+
+    #cssmenu ul ul li:hover {
+        background:#363636!important;
+    }
+
+    #cssmenu ul ul ul li a {
+        padding-left:35px;
+    }
+
+    #cssmenu ul ul li a {
+        color:#ddd;
+        background:none;
+    }
+
+    #cssmenu ul ul li:hover > a, #cssmenu ul ul li.active > a {
+        color:#fff;
+    }
+
+    #cssmenu ul ul, #cssmenu ul ul ul {
+        position:relative;
+        left:0;
+        width:100%;
+        margin:0;
+        text-align:left;
+    }
+
+    #cssmenu > ul > li.has-sub > a:after, 
+    #cssmenu > ul > li.has-sub > a:before, 
+    #cssmenu ul ul > li.has-sub > a:after, 
+    #cssmenu ul ul > li.has-sub > a:before {
+        display:none;
+    }
+
+    #cssmenu #head-mobile {
+        display:block;
+        padding: 0.5rem;
+        color:#ddd;
+        font-size:12px;
+        font-weight:700;
+    }
+
+    .button {
+        width:55px;
+        height:46px;
+        position:absolute;
+        right:0;
+        top:1.1rem;
+        cursor:pointer;
+        z-index: 12399994;
+    }
+
+    .button:after {
+        position:absolute;
+        top:22px;
+        right:20px;
+        display:block;
+        height:4px;
+        width:20px;
+        border-top:2px solid #dddddd;
+        border-bottom:2px solid #dddddd;
+        content:'';
+    }
+
+    .button:before {
+        -webkit-transition:all .3s ease;
+        -ms-transition:all .3s ease;
+        transition:all .3s ease;
+        position:absolute;
+        top:16px;
+        right:20px;
+        display:block;
+        height:2px;
+        width:20px;
+        background:#ddd;
+        content:'';
+    }
+
+    .button.menu-opened:after {
+        -webkit-transition:all .3s ease;
+        -ms-transition:all .3s ease;
+        transition:all .3s ease;
+        top:23px;
+        border:0;
+        height:2px;
+        width:19px;
+        background:#fff;
+        -webkit-transform:rotate(45deg);
+        -moz-transform:rotate(45deg);
+        -ms-transform:rotate(45deg);
+        -o-transform:rotate(45deg);
+        transform:rotate(45deg);
+    }
+
+    .button.menu-opened:before {
+        top:23px;
+        background:#fff;
+        width:19px;
+        -webkit-transform:rotate(-45deg);
+        -moz-transform:rotate(-45deg);
+        -ms-transform:rotate(-45deg);
+        -o-transform:rotate(-45deg);
+        transform:rotate(-45deg);
+    }
+
+    #cssmenu .submenu-button {
+        position:absolute;
+        z-index:99;
+        right:0;
+        top:0;
+        display:block;
+        border-left:1px solid #444;
+        height:46px;
+        width:46px;
+        cursor:pointer;
+        background:#363636;
+    }
+
+    #cssmenu .submenu-button.submenu-opened {
+        background:#262626;
+    }
+
+    #cssmenu ul ul .submenu-button {
+        height:34px;
+        width:34px;
+    }
+
+    #cssmenu .submenu-button:after {
+        position:absolute;
+        top:22px;
+        right:19px;
+        width:8px;
+        height:2px;
+        display:block;
+        background:#ddd;
+        content:'';
+    }
+
+    #cssmenu ul ul .submenu-button:after {
+        top:15px;
+        right:13px;
+    }
+
+    #cssmenu .submenu-button.submenu-opened:after {
+        background:#fff;
+    }
+
+    #cssmenu .submenu-button:before {
+        position:absolute;
+        top:19px;
+        right:22px;
+        display:block;
+        width:2px;
+        height:8px;
+        background:#ddd;
+        content:'';
+    }
+
+    #cssmenu ul ul .submenu-button:before {
+        top:12px;
+        right:16px;
+    }
+
+    #cssmenu .submenu-button.submenu-opened:before {
+        display:none;
+    }
+
+    #cssmenu ul ul ul li.active a {
+        border-left:none;
+    }
+
+    #cssmenu > ul > li.has-sub > ul > li.active > a, #cssmenu > ul ul > li.has-sub > ul > li.active > a {
+        border-top:none;
+    }
+
+}
