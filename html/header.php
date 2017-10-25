@@ -5,6 +5,10 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
     <meta name="viewport" content="width = device-width, initial-scale = 1">
     <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+<<<<<<< HEAD
+=======
+    <link rel="icon" href="../assets/img/Yoshis_Store_-_Logo.png">
+>>>>>>> Ramon
   </head>
 
   <body id="header">
@@ -14,8 +18,13 @@
         <header>
           <nav id='cssmenu'>
             <div class="navbar-header">
+<<<<<<< HEAD
               <a class="navbar-brand"><img src="../assets/img/Yoshi.png"></a>
               <div class="navbar-brand" id="logo">Yoshi's Store</div>
+=======
+              <a class="navbar-brand nav-header"><img src="../assets/img/Yoshis_Store_-_Logo.png"></a>
+              <div class="navbar-brand nav-header" id="logo">Yoshi's Store</div>
+>>>>>>> Ramon
             </div>
             <div id="head-mobile"></div>
             <div class="button"></div>
@@ -43,7 +52,11 @@
               <li class='active'><a href='#'>Localização</a></li>
               <li><a href='#'>Contato</a></li>
               <li>
+<<<<<<< HEAD
                 <div class="form-group">
+=======
+                <div class="form-group form-header">
+>>>>>>> Ramon
                   <form class="form-inline my-2 my-lg-0"  id="buscar">
                     <input class="form-control mr-sm-2 campo-busca container" type="text" placeholder="Buscar" aria-label="Search">
                     <button type="button" class="btn btn-default btn-busca" aria-label="Buscar" type="submit">
