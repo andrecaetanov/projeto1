@@ -5,12 +5,12 @@
   <title>Yoshi Store</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" href="../assets/img/logo/Yoshis_Store_-_Logo.ico" type="image/x-icon" />
-  <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="../assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/index.css">
 </head>
 <body class="pagina-inicial">
   <!-- __________________________________________________________________________________________________________________________________ -->
-    <section class="slides">
+  <section class="slides">
     <!-- Carousel -->
     <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
       <!-- Indicadores -->
@@ -101,7 +101,6 @@
               </ul>
               <!-- Fim das imagens dos produtos -->
             </div>
-            <br/>
           </div>        
         </div>
       </div>
@@ -109,7 +108,7 @@
     </section>
   </main>
   <script src="../assets/js/jquery-1.9.1.js"></script>
-  <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
   <script src="../assets/js/footer.js"></script>
   <script src="https://use.fontawesome.com/6f8b7aea2d.js"></script>
 </body>
