@@ -5,7 +5,7 @@
   <title>Yoshi Store</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" href="../assets/img/logo/Yoshis_Store_-_Logo.ico" type="image/x-icon" />
-  <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/footer.css">
 
 </head>
@@ -45,13 +45,13 @@
             </ul>
           </div>
         </div>
-      <div class="col-md-3 col-md-offset-9">
-        <div class="redes-sociais">
-          <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-          <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+        <div class="col-md-3 col-md-offset-9">
+          <div class="redes-sociais">
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+          </div>
         </div>
-      </div>
       </div>
     </div>
     <!-- Segunda parte do footer -->
@@ -62,7 +62,7 @@
   </footer>
   <!-- Fim rodapé -->
   <script src="../assets/js/jquery-1.9.1.js"></script>
-  <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
   <script src="../assets/js/footer.js"></script>
   <script src="https://use.fontawesome.com/6f8b7aea2d.js"></script>
 </body>
