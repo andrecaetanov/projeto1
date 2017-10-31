@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/index.css">
 </head>
 <body class="pagina-inicial">
+  <?php include ("header.php"); ?>
   <!-- __________________________________________________________________________________________________________________________________ -->
   <section class="slides">
     <!-- Carousel -->
@@ -107,9 +108,6 @@
       <!-- Fim dos produtos -->
     </section>
   </main>
-  <script src="../assets/js/jquery-1.9.1.js"></script>
-  <script src="../assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-  <script src="../assets/js/footer.js"></script>
-  <script src="https://use.fontawesome.com/6f8b7aea2d.js"></script>
+  <?php include ("footer.php"); ?>
 </body>
 </html>
