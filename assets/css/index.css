@@ -3,6 +3,10 @@
 		line-height: 1;		
 	}
 
+	.pagina-inicial main{
+		position: relative;
+		z-index: 10;
+	}
 	#wrapper-produtos,#top-bar{
 		background: #fff;
 		margin: -13% auto 5% auto;
@@ -76,14 +80,24 @@
 	}
 
 	.carousel-inner{
-		z-index: -1;
+		text-align: center;
+		
 
 	}
 	.carousel-indicators{
 		margin-bottom: 13%;
 		margin-left: -16%;
 	}
-
+	.carousel-inner .carousel-caption{
+		margin-bottom: 11%;
+		margin-left: 8%;
+		z-index: 2;
+	}
+	.carousel-caption button{
+		z-index: 1;
+		background: green
+		color:white;	
+	}
 	.carousel-inner img {
 		margin: auto;
 	}
