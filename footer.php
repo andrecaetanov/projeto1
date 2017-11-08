@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <title>Yoshi Store</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" href="../assets/img/logo/Yoshis_Store_-_Logo.ico" type="image/x-icon" />
-  <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="../assets/css/footer.css">
+  <link rel="shortcut icon" href="/assets/img/logo/Yoshis_Store_-_Logo.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/footer.css">
 
 </head>
 <body>
@@ -61,9 +61,9 @@
     <!-- Fim da segunda parte do footer -->
   </footer>
   <!-- Fim rodapé -->
-  <script src="../assets/js/jquery-1.9.1.js"></script>
-  <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="../assets/js/footer.js"></script>
+  <script src="/assets/js/jquery-1.9.1.js"></script>
+  <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/assets/js/footer.js"></script>
   <script src="https://use.fontawesome.com/6f8b7aea2d.js"></script>
 </body>
 </html>

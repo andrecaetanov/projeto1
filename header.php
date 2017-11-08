@@ -1,11 +1,11 @@
 <!doctype html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
     <meta name="viewport" content="width = device-width, initial-scale = 1">
     <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
-    <link rel="icon" href="../assets/img/Yoshis_Store_-_Logo.png">
+    <link rel="icon" href="/assets/img/Yoshis_Store_-_Logo.png">
   </head>
 
   <body id="header">
@@ -60,9 +60,9 @@
     </div>
     <!-- FIM DO MENU DE NAVEGAÇÃO-->
 
-    <script src="../assets/js/jquery.js"></script>
-    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../assets/bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-dropdown.js"></script>
     <script type="text/javascript" src="../assets/js/menu-navegacao.js"></script>
 
   </body>

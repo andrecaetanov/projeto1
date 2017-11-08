@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <title>Yoshi Store</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" href="../assets/img/logo/Yoshis_Store_-_Logo.ico" type="image/x-icon" />
-  <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+  <link rel="shortcut icon" href="/assets/img/logo/Yoshis_Store_-_Logo.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 </head>
 <body class="pagina-inicial">
   <!-- __________________________________________________________________________________________________________________________________ -->
@@ -23,13 +23,13 @@
       <!-- Imagens dos slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="../assets/img/slides/slide1.jpg" alt="Slide 1">
+          <img src="/assets/img/slides/slide1.jpg" alt="Slide 1">
         </div>
         <div class="item">
-          <img src="../assets/img/slides/slide2.jpg" alt="Slide 2"> 
+          <img src="/assets/img/slides/slide2.jpg" alt="Slide 2"> 
         </div>
         <div class="item">
-          <img src="../assets/img/slides/slide3.jpg" alt="Slide 3"> 
+          <img src="/assets/img/slides/slide3.jpg" alt="Slide 3"> 
         </div>
       </div>
     </div>
@@ -108,9 +108,9 @@
       <!-- Fim dos produtos -->
     </section>
   </main>
-  <script src="../assets/js/jquery-1.9.1.js"></script>
-  <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="../assets/js/footer.js"></script>
+  <script src="/assets/js/jquery-1.9.1.js"></script>
+  <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/assets/js/footer.js"></script>
   <script src="https://use.fontawesome.com/6f8b7aea2d.js"></script>
 </body>
 </html>

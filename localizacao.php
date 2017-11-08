@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../assets/css/pagina-localizacao.css">
+        <link rel="stylesheet" type="text/css" href="/assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/assets/css/pagina-localizacao.css">
         <meta name="viewport" content="width = device-width, initial-scale = 1">
         <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
 
@@ -90,9 +90,9 @@
       </script>
       
       
-      <script src="../assets/js/jquery.js"></script>
-      <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-      <script src="../assets/bootstrap/js/bootstrap-dropdown.js"></script>
-      <script type="text/javascript" src="../assets/js/menu-navegacao.js"></script>
+      <script src="/assets/js/jquery.js"></script>
+      <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+      <script src="/assets/bootstrap/js/bootstrap-dropdown.js"></script>
+      <script type="text/javascript" src="/assets/js/menu-navegacao.js"></script>
   </body>
 </html>
