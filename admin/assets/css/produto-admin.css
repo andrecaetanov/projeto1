@@ -1,0 +1,37 @@
+.principal-produto-admin {
+	padding-top: 2rem;
+	position: absolute;
+	display: block;
+}
+
+.lista-produto thead {
+	cursor: pointer;
+}
+
+.titulo {
+	text-align: center;
+}
+
+.excluir{
+	color: #EE0000;
+	cursor: pointer;
+}
+
+.editar {
+	color: #0000CC;
+	cursor: pointer;
+}
+
+.lista-produto {
+	align-items: center;
+}
+
+.btn-cadastrar {
+	position: relative;
+	width: 100%;
+}
+
+.pesquisa {
+	display: flex;
+	justify-content: space-between;
+}
