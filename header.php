@@ -7,7 +7,7 @@
 					<div class="navbar-header">
 
 
-						<a class="navbar-brand nav-header"><img src="../assets/img/Yoshis_Store_-_Logo.png"></a>
+						<a class="navbar-brand nav-header"><img src="assets/img/Yoshis_Store_-_Logo.png"></a>
 						<div class="navbar-brand nav-header" id="logo">Yoshi's Store</div>
 
 					</div>

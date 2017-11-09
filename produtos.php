@@ -14,6 +14,8 @@
   include("funcoes-banco.php");
   $categorias = getCategorias($conexao);
 
+  $produtos = listaProdutos($conexao);
+
   if(existeBusca()){
   
     if(isset($_POST['nome']))
@@ -55,7 +57,7 @@
     $produtos = buscaAvancada($conexao, $query);
 }
   else
-    $produtos = getProdutos($conexao);
+    $produtos = listaProdutos($conexao);
 
 ?>
 
@@ -121,18 +123,30 @@
             <div>
               <!-- Imagens dos produtos -->
               <ul class="thumbnails">
-                <?php foreach($produtos as $produto) { ?>                   
-                <li class="col-md-3">
+              <?php
+              foreach($produtos as $produto) :
+                ?>                       
+                <li class="col-md-4">
                   <div class="caixa-produtos">
                     <span></span>
-                    <p><a href="#"><img src="assets/img/Yoshi.png" alt="" class="img-responsive" /></a></p>
-                    <a href="#" class="titulo"><?php echo($produto['nome']);?></a><br/>
-                    <?php $categoria = getNomePlataforma($conexao, $produto); var_dump($categoria)?>
-                    <a href="#" class="categoria"><?=$categoria['nome']?></a>
-                    <p class="preco"><?=$produto['preco'] ?></p>
+                    <p><a href="#"><img src="assets/img/6.jpg" alt=<?= $produto['nome']?> class="img-responsive" /></a></p>
+                    <a href="#" class="titulo"><?= $produto['nome']?></a><br/>
+                    <?php
+                    if($produto['tipo_nome']=="Console") :
+                      ?>
+                      <a href="#" class="categoria"><?= $produto['tipo_nome']?></a>
+                      <?php else :
+                      ?>
+                      <a href="#" class="categoria"><?= $produto['tipo_nome']?> <?= $produto['plataforma_nome']?></a>
+                      <?php
+                    endif
+                    ?>
+                    <p class="preco">R$<?= $produto['preco']?></p>
                   </div>
                 </li>
-                <?php } ?>
+                <?php
+									endforeach
+									?>
               </ul>
               <!-- Fim das imagens dos produtos -->
             </div>
