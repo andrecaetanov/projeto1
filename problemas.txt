@@ -1,0 +1,3 @@
+corrigir query pagina produtos
+adicionar campo para fazer upload de imagem
+ordenar produto de acordo com o nome
