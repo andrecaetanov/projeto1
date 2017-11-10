@@ -97,7 +97,7 @@ function removeUsuario($conexao, $id){
 }
 
 
-function listaProdutos($conexao) {
+function listaProdutosDeProdutos($conexao) {
   $produtos = array();
   $resultado = mysqli_query($conexao, "select p.*,t.nome as tipo_nome,pl.nome as plataforma_nome from produto as p join tipo as t on t.id=p.tipo_id join plataforma as pl on pl.id=p.plataforma_id order by p.id desc limit 3,6");
   $i;
@@ -105,4 +105,21 @@ function listaProdutos($conexao) {
       array_push($produtos, $produto);
   }
   return $produtos;
+}
+
+function getUsuarioPeloId($conexao, $id){
+  $query = "SELECT * FROM usuario WHERE id = {$id}";
+
+  $resultado = mysqli_query($conexao, $query);
+
+  while($usuario = mysqli_fetch_assoc($resultado)){
+    return $usuario;
+  }
+ 
+}
+
+function alteraUsuario($conexao, $login, $senha, $id){
+  $query = "UPDATE usuario SET login = '{$login}', senha = '{$senha}' WHERE id = {$id}";
+
+  mysqli_query($conexao, $query);
 }

@@ -14,7 +14,7 @@
   include("funcoes-banco.php");
   $categorias = getCategorias($conexao);
 
-  $produtos = listaProdutos($conexao);
+  $produtos = listaProdutosDeProdutos($conexao);
 
   if(existeBusca()){
   
@@ -57,7 +57,7 @@
     $produtos = buscaAvancada($conexao, $query);
 }
   else
-    $produtos = listaProdutos($conexao);
+    $produtos = listaProdutosDeProdutos($conexao);
 
 ?>
 

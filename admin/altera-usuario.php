@@ -1,13 +1,13 @@
-<?php
+<?php 
 
 include("../conexao.php");
 include("../funcoes-banco.php");
 
-
 $login = $_POST['login'];
 $senha = md5($_POST['senha']);
+$id = $_POST['id'];
 
-$resultado = insereUsuario($conexao, $login, $senha);
+alteraUsuario($conexao, $login, $senha, $id);
 
-header("Location: usuarios.php?cadastrado=1");
+header("Location: usuarios.php?alterado=1");
 die();

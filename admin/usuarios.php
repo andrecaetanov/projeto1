@@ -11,6 +11,17 @@
     $removido = 1;
   }
 
+  $cadastrado = 0;
+  if(isset($_GET['cadastrado']) && $_GET['cadastrado'] == 1 ){
+    $cadastrado = 1;
+  }
+
+  $alterado = 0;
+  if(isset($_GET['alterado']) && $_GET['alterado'] == 1 ){
+    $alterado = 1;
+  }
+
+
 ?>
 
 <head>
@@ -29,6 +40,14 @@
 
 <?php if($removido == 1) { ?>
   <p class = "alert-success container" align="center">Usuario removido com sucesso</p>
+<?php } ?>
+
+<?php if($cadastrado == 1) { ?>
+  <p class = "alert-success container" align="center">Usuario cadastrado com sucesso</p>
+<?php } ?>
+
+<?php if($alterado == 1) { ?>
+  <p class = "alert-success container" align="center">Usuario alterado com sucesso</p>
 <?php } ?>
 
 <button class="botao-cadastrar btn btn-success" onclick="location.href = 'form-usuario.php'">Cadastrar Usuario</button>
@@ -51,7 +70,7 @@
           <td><?=$usuario['login']?></td>
           <td><?=$usuario['senha']?></td>
           <td>
-            <a href="form-usuario.php"><i class="fa fa-pencil fa-lg"></i></a>
+            <a href="form-altera-usuario.php?id=<?=$usuario['id']?>"><i class="fa fa-pencil fa-lg"></i></a>
           </td>
           <td>
             <a href="deleta-usuario.php?id=<?=$usuario['id']?>"><i class="fa fa-trash fa-lg" style="color:red"></i></a>
