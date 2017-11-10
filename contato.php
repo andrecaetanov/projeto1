@@ -3,17 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="../assets/img/Yoshis_Store_-_Logo.png">
-	<link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+	<link rel="icon" href="assets/img/Yoshis_Store_-_Logo.png">
+	<link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">	
+	<link rel="stylesheet" type="text/css" href="assets/css/contato.css">	
+    <link rel="stylesheet" type="text/css" href="assets/css/header.css">
 	<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+	
 	<title>Yoshi's Store</title>
 </head>
 <body class="body-contato">
 	<!-- Início Header (temporário) -->
-	<header>
-		
-	</header>
+	<?php include("header.php"); ?>
 	<!-- texto -->
 
 	<!-- Inicio do conteúdo -->
@@ -62,7 +63,7 @@
 							<address id="endereco-telefone">
 								<div class="div-telefones">
 									<div class="contato-celular">
-										<strong><a class="telefone" href="tel:+55032999999999">(32)99999-9999</a><img class="figure logo-whatsapp" src="../assets/img/whatsapp.png">
+										<strong><a class="telefone" href="tel:+55032999999999">(32)99999-9999</a><img class="figure logo-whatsapp" src="assets/img/whatsapp.png">
 									</div>
 									<div class="contato-telefone">
 										<a class="telefone" href="tel:+5503232323232">(32)3232-3232</a></strong>
@@ -88,15 +89,18 @@
 	<!-- FIM DO CONTEÚDO -->
 
 
-	
+	<?php include("footer.php"); ?>
 
 
 
-
-	<script src="../assets/js/jquery.js"></script>
-	<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-	<script src="../assets/js/navbar-animation-fix.js"></script>
-	<script type="text/javascript" src="../assets/js/menu-navegacao.js"></script>
+	<script src="../assets/js/jquery-1.9.1.js"></script>
+  	<script src="../assets/js/footer.js"></script>
+	<script src="assets/js/jquery.js"></script>
+	<script src="https://use.fontawesome.com/6f8b7aea2d.js"></script>
+	<script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/menu-navegacao.js"></script>
+    <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap-3.3.7-dist/js/bootstrap-dropdown.js"></script>
 
 </body>
 </html>

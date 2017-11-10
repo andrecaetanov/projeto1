@@ -1,9 +1,6 @@
 /***************************************************************************************/
 /********************************COMEÇO DO CSS DO HEADER********************************/
 /***************************************************************************************/
-.zindex {
-    z-index: 1;
-}
 
 #logo{
     padding: 16px;
@@ -26,19 +23,6 @@
 .container-header {
     width: 100%;
     padding: 0;
-}
-
-.form-group {
-    margin-bottom: 0;
-}
-
-.form-header form {
-    padding-top: 0.4rem;
-    padding-left: 0.5rem;
-}
-
-.form-header button {
-
 }
 
 header  {
@@ -66,10 +50,6 @@ nav {
 
 .button + ul {
     margin-top: 10px;
-}
-
-#consoles ul {
-    padding-left: 0;
 }
 
 #cssmenu, #cssmenu ul, #cssmenu ul li, #cssmenu ul li a, #cssmenu #head-mobile {
@@ -170,10 +150,6 @@ nav {
     -ms-transition:all .25s ease;
     background:#333;
     transition:all .25s ease;
-}
-
-#cssmenu form:hover {
-        background:#333!important;
 }
 
 #cssmenu li:hover > ul {

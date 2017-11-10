@@ -1,5 +1,4 @@
-  <link rel="stylesheet" type="text/css" href="../assets/css/footer.css">
-  <!-- __________________________________________________________________________________________________________________________________ -->
+ <!-- __________________________________________________________________________________________________________________________________ -->
   <!-- Rodapé -->
   <footer>
     <div class="footer-principal">
@@ -15,11 +14,11 @@
           <div class="menu">
             <h5>Navegação</h5>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Produtos</a></li>
-              <li><a href="#">Contato</a></li>
-              <li><a href="#">Sobre nós</a></li>
-              <li><a href="#">Localização</a></li>
+              <li><a href="index.php">Home</a></li>
+              <li><a href="produtos.php">Produtos</a></li>
+              <li><a href="contato.php">Contato</a></li>
+              <li><a href="quemSomos.php">Sobre nós</a></li>
+              <li><a href="localizacao.php">Localização</a></li>
             </ul>
           </div>
         </div>
@@ -50,7 +49,7 @@
     <!-- Fim da segunda parte do footer -->
   </footer>
   <!-- Fim rodapé -->
-  <script src="../assets/js/jquery-1.9.1.js"></script>
-  <script src="../assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-  <script src="../assets/js/footer.js"></script>
+  <script src="assets/js/jquery-1.9.1.js"></script>
+  <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <script src="assets/js/footer.js"></script>
   <script src="https://use.fontawesome.com/6f8b7aea2d.js"></script>

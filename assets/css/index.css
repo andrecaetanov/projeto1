@@ -3,6 +3,10 @@
 		line-height: 1;		
 	}
 
+	.pagina-inicial main{
+		position: relative;
+		z-index: 10;
+	}
 	#wrapper-produtos,#top-bar{
 		background: #fff;
 		margin: -13% auto 5% auto;
@@ -76,14 +80,36 @@
 	}
 
 	.carousel-inner{
-		z-index: -1;
+		text-align: center;
+		
 
 	}
 	.carousel-indicators{
 		margin-bottom: 13%;
 		margin-left: -16%;
 	}
+	.carousel-inner .carousel-caption{
+		margin-bottom: 11%;
+		margin-left: 8%;
+		z-index: 2;
+	}
+	.carousel-caption button{
+		z-index: 1;
+		background-color: #08911e;
+		border-color: #08911e;
+	}
+	.carousel-caption button:hover,button:link,button:active,button:visited{
+		background-color: #0bc92a;
+		border:none;
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	}
+	.carousel-caption a{
+		color:#ffffff;	
+	}
+	.carousel-caption a:hover,a:link,a:active,a:visited{
+		text-decoration:none;
 
+	}
 	.carousel-inner img {
 		margin: auto;
 	}
@@ -114,9 +140,6 @@
 		z-index: 2;
 	}
 
-	.navbar-brand{
-		margin-top: -13px;
-	}
 
 	.img-responsive{
 		display: inline-block;

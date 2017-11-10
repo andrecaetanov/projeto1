@@ -1,0 +1,58 @@
+.principal-cadastra-produto, .principal-atualiza-produto {
+	padding-top: 4rem;
+	position: absolute;
+	display: block;
+	text-align: center;
+}
+
+.titulo {
+	
+}
+
+.formulario {
+	text-align: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.btn-enviar {
+	padding-top: 90rem;
+	position: relative;
+}
+
+.container-formulario {
+	width: auto;
+}
+
+.row1, .row2, .row3 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.descricao {
+	width: 95.5%;
+}
+
+.desc {
+	resize: vertical;
+}
+
+.listagem {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 26%;
+}
+
+.form-select {
+	display: flex;
+	justify-content: space-between;
+}
+
+.form-checkbox {
+	display: flex;
+	flex-direction: column;
+}
