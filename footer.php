@@ -14,11 +14,11 @@
           <div class="menu">
             <h5>Navegação</h5>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Produtos</a></li>
-              <li><a href="#">Contato</a></li>
-              <li><a href="#">Sobre nós</a></li>
-              <li><a href="#">Localização</a></li>
+              <li><a href="index.php">Home</a></li>
+              <li><a href="produtos.php">Produtos</a></li>
+              <li><a href="contato.php">Contato</a></li>
+              <li><a href="quemSomos.php">Sobre nós</a></li>
+              <li><a href="localizacao.php">Localização</a></li>
             </ul>
           </div>
         </div>

@@ -10,11 +10,10 @@
         <div id="head-mobile"></div>
         <div class="button"></div>
         <ul class="conteudo">
-          <li><a href='index.php'>Home</a></li>
-          <li><a href='quemSomos.php'>Tipos</a></li>
+          <li><a href='produto-admin.php'>Home</a></li>
+          <li><a href='#'>Tipos</a></li>
           <li><a href='#'>Plataformas</a>
-          <li><a href='#'>Produtos</a>
-          <li><a href='#'>Usuários</a>
+          <li><a href='usuarios.php'>Usuários</a>
         </ul>
       </nav>
     </header>
