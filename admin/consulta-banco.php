@@ -36,8 +36,8 @@ function listaPlataforma($conexao) {
   return $plataformas;
 }
 
-function insereProduto($conexao, $nome, $preco, $descricao, $data_lancamento, $plataforma, $tipo, $usado, $disponivel) {
-  $query = "INSERT INTO produto (nome, preco, descricao, data_lancamento, plataforma_id, tipo_id, usado, disponivel) VALUES ('{$nome}', {$preco}, '{$descricao}', '{$data_lancamento}', {$plataforma}, {$tipo}, {$usado}, {$disponivel}) ";
+function insereProduto($conexao, $nome, $preco, $descricao, $data_lancamento, $plataforma, $tipo, $usado, $disponivel, $imagem) {
+  $query = "INSERT INTO produto (nome, preco, descricao, data_lancamento, plataforma_id, tipo_id, usado, disponivel, imagem) VALUES ('{$nome}', {$preco}, '{$descricao}', '{$data_lancamento}', {$plataforma}, {$tipo}, {$usado}, {$disponivel}, '{$imagem}') ";
   return mysqli_query($conexao, $query);
 }
 
@@ -58,6 +58,13 @@ function removeProduto($conexao, $id) {
 
 function getProduto($conexao, $id) {
   $query = "select * from produto where id = {$id}";
+  $resultado = mysqli_query($conexao, $query);
+  $produto = mysqli_fetch_assoc($resultado);
+  return $produto;
+}
+
+function getImagem($conexao, $id) {
+  $query = "select imagem from produto where id = {$id}";
   $resultado = mysqli_query($conexao, $query);
   $produto = mysqli_fetch_assoc($resultado);
   return $produto;
