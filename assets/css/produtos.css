@@ -28,6 +28,7 @@
     color: rgb(29, 139, 29);
     font-family: 'Bangers';
     text-align: center;
+    font-size: 120%;  
 }
 
 #botao-buscar{
@@ -113,8 +114,9 @@ body{
     color:#111111;
     display:inline-block;
     font-weight:bold;
-    font-size:11px;
+    font-size:150%;
     margin:15px 0 5px 0;
+    letter-spacing: 1.5px;
 }
 .caixa-produtos a.categoria{
     color:#eb4800;
@@ -134,6 +136,7 @@ h4.titulo{
     font-size:15px;
     min-height:27px;
     width:100%;
+    letter-spacing: 1.5px;
 }
 
 h4.titulo strong{
@@ -142,45 +145,6 @@ h4.titulo strong{
 h4.titulo span.text{
     background-color:#fff;
     padding-right:10px;
-}
-
-.carousel-inner{
-    z-index: -1;
-
-}
-.carousel-indicators{
-    margin-bottom: 13%;
-    margin-left: -16%;
-}
-
-.carousel-inner img {
-    margin: auto;
-}
-
-
-.carousel-fade .carousel-inner .item {
-    opacity: 0;
-    transition-property: opacity;
-}
-
-.carousel-fade .carousel-inner .active {
-    opacity: 1;
-}
-
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-    left: 0;
-    opacity: 0;
-    z-index: 1;
-}
-
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
-    opacity: 1;
-}
-
-.carousel-fade .carousel-control {
-    z-index: 2;
 }
 
 .img-responsive{

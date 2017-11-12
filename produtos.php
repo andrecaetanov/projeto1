@@ -118,7 +118,7 @@
         <div class="row">
           <div class="col-md-12">                         
             <h4 class="titulo">
-              <span class="text">Adicionados <strong>recentemente</strong></span>
+              <span class="text"><strong> Produtos</strong></span>
             </h4>
             <div>
               <!-- Imagens dos produtos -->
@@ -126,10 +126,10 @@
               <?php
               foreach($produtos as $produto) :
                 ?>                       
-                <li class="col-md-4">
+                <li class="col-md-3">
                   <div class="caixa-produtos">
                     <span></span>
-                    <p><a href="#"><img src="assets/img/6.jpg" alt=<?= $produto['nome']?> class="img-responsive" /></a></p>
+                    <p><a href="#"><img src="assets/img/Yoshi.png" alt=<?= $produto['nome']?> class="img-responsive" /></a></p>
                     <a href="#" class="titulo"><?= $produto['nome']?></a><br/>
                     <?php
                     if($produto['tipo_nome']=="Console") :
