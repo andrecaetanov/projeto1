@@ -1,0 +1,30 @@
+body{
+  background-color: black;
+}
+
+#imagem-jogo{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  display: inline-block;
+  vertical-align: top;  
+}
+
+#texto{
+  display: inline-block;
+  margin-top: 5%;
+  margin-left: 5%;
+ 
+}
+
+#nome-produto{
+  color: #FFFFFF;
+  font-family: "Bangers";
+  letter-spacing: 4px; 
+}
+
+.descricao{
+  color: #ffffff;
+  margin-top: 10%;
+  
+}

@@ -30,6 +30,19 @@ function getCategorias($conexao){
   return $categorias;
 }
 
+function getTipos($conexao){
+  $query = "SELECT * FROM tipo";
+    
+  $resultado = mysqli_query($conexao, $query);
+  
+  $tipos = array();
+
+  while ($tipo = mysqli_fetch_assoc($resultado)){
+    array_push($tipos, $tipo);
+  }
+  
+  return $tipos;
+}
 
 
 

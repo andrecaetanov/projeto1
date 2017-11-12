@@ -4,7 +4,6 @@
         <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="assets/css/pagina-localizacao.css">
         <meta name="viewport" content="width = device-width, initial-scale = 1">
-        <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
         <?php include("head-navbar-footer.php"); ?>
     </head>
     <body id="body-localizacao">
