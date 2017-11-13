@@ -4,7 +4,7 @@ include("../conexao.php");
 include("../funcoes-banco.php");
 
 
-$id = $_GET['id'];
+$id = $_POST['id'];
 
 removeUsuario($conexao, $id);
 

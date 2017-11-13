@@ -11,8 +11,8 @@
         <div class="button"></div>
         <ul class="conteudo">
           <li><a href='produto-admin.php'>Home</a></li>
-          <li><a href='#'>Tipos</a></li>
-          <li><a href='#'>Plataformas</a>
+          <li><a href='tipo-lista.php'>Tipos</a></li>
+          <li><a href='plataforma-lista.php'>Plataformas</a>
           <li><a href='usuarios.php'>Usuários</a>
         </ul>
       </nav>
