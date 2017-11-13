@@ -12,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="../assets/css/header.css">
 	<link rel="icon" href="../assets/img/Yoshis_Store_-_Logo.png">
 </head>
+<body>
 <?php include ("header.php"); ?>
 <section id="quem-somos" class="container">
 	<!-- Inicio do texto institucional -->
@@ -28,3 +29,5 @@
 	<!-- Fim do texto institucional -->
 </section>
 <?php include ("footer.php"); ?>
+</body>
+</html>
