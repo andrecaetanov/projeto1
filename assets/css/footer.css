@@ -1,10 +1,6 @@
 ol, ul {
 		list-style: none;
 	}
-	article, aside, details, figcaption, figure, 
-	footer, header, hgroup, menu, nav, section {
-		display: block;
-	}
 
 	html, body, div, span, applet, object, iframe,
 	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -24,6 +20,7 @@ ol, ul {
 	}
 	footer {
 		border-top: 5px ridge #cb8733;
+		display: block;
 	}
 
 	.footer-copyright {

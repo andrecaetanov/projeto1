@@ -13,17 +13,17 @@
   include("conexao.php");
   include("funcoes-banco.php");
   $categorias = getCategorias($conexao);
-
+  $tipos = getTipos($conexao);
   $produtos = listaProdutosDeProdutos($conexao);
 
   if(existeBusca()){
-  
     if(isset($_POST['nome']))
       $nome = $_POST['nome'];
     else
       $nome = "";
 
-    $query = "SELECT * FROM produto WHERE nome LIKE '{$nome}%'";
+    $query = "SELECT p.*,t.nome AS tipo_nome,pl.nome AS plataforma_nome FROM produto AS p join tipo AS t
+    ON t.id=p.tipo_id join plataforma AS pl on pl.id=p.plataforma_id WHERE p.nome LIKE '%{$nome}%'";
 
     if(isset($_POST['precoMin'])){ 
       if($_POST['precoMin'] != "")
@@ -45,14 +45,34 @@
 
     if(isset($_POST['plataforma'])){
       if($_POST['plataforma'] != 0)
-        $plataforma = " AND plataforma_id = {$_POST['plataforma']}";
+        $plataforma = " AND p.plataforma_id = {$_POST['plataforma']}";
       else
         $plataforma = "";
     }
 
     $query .= $plataforma;
 
-    var_dump($query);
+    $novo = " AND (usado = 0 OR usado = 1)";
+
+
+    if(isset($_POST['novo']))    
+      if( $_POST['novo'] == 1 && ( !isset($_POST['usado']) || $_POST['usado'] == 0  ) )
+        $novo = " AND usado = 0";
+
+    if(isset($_POST['usado']))  
+      if( !isset($_POST['novo']) || ($_POST['novo'] == 0 ) && $_POST['usado'] == 1 )
+        $novo = " AND usado = 1";
+
+    $query .= $novo;
+
+    if(isset($_POST['tipo'])){
+      if($_POST['tipo'] != 0)
+        $tipo = " AND p.tipo_id = {$_POST['tipo']}";
+      else
+        $tipo = "";
+    }
+
+    $query.= $tipo;
 
     $produtos = buscaAvancada($conexao, $query);
 }
@@ -84,10 +104,17 @@
     <input type="text" name="nome" placeholder="Nome" class="form-control campo-busca col-sm-6">
     
     
-    <select name="plataforma" class="form-control combobox-console col-sm-6">
-      <option value="">Console</option>
+    <select name="plataforma" class="form-control combobox-console col-sm-3">
+      <option value="0">Console</option>
       <?php foreach($categorias as $categoria) { ?>
       <option value=<?=$categoria['id']?>><?=$categoria['nome']?></option>
+      <?php } ?>
+    </select>
+
+    <select name="tipo" class="form-control combobox-tipo col-sm-3">
+      <option value="0">Tipo</option>
+      <?php foreach($tipos as $tipo) { ?>
+      <option value=<?=$tipo['id']?>><?=$tipo['nome']?></option>
       <?php } ?>
     </select>
 
@@ -118,7 +145,7 @@
         <div class="row">
           <div class="col-md-12">                         
             <h4 class="titulo">
-              <span class="text">Adicionados <strong>recentemente</strong></span>
+              <span class="text"><strong> Produtos</strong></span>
             </h4>
             <div>
               <!-- Imagens dos produtos -->
@@ -126,10 +153,10 @@
               <?php
               foreach($produtos as $produto) :
                 ?>                       
-                <li class="col-md-4">
+                <li class="col-md-3">
                   <div class="caixa-produtos">
                     <span></span>
-                    <p><a href="#"><img src="assets/img/6.jpg" alt=<?= $produto['nome']?> class="img-responsive" /></a></p>
+                    <p><a href="#"><img src="assets/img/Yoshi.png" alt=<?= $produto['nome']?> class="img-responsive" /></a></p>
                     <a href="#" class="titulo"><?= $produto['nome']?></a><br/>
                     <?php
                     if($produto['tipo_nome']=="Console") :
