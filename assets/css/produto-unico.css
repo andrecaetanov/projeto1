@@ -6,21 +6,28 @@ body{
   margin-top: 5%;
   margin-bottom: 5%;
   margin-left: 5%;
-  display: inline-block;
   vertical-align: top;  
+  display: inline-block;
+  border: 1.5px solid rgba(192, 255, 0, 1);
+}
+
+#div-imagem{
+  width: 50%;
+  height: 50%;
+  margin-right: 0%;
 }
 
 #texto{
   display: inline-block;
   margin-top: 5%;
   margin-left: 5%;
- 
 }
 
 #nome-produto{
   color: #FFFFFF;
   font-family: "Bangers";
   letter-spacing: 4px; 
+  color: rgba(192, 255, 0, 1);
 }
 
 .descricao{

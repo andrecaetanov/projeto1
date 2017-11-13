@@ -48,12 +48,7 @@
 							endif;
 							$i++;
 							?>
-							<img src="assets/img/produtos/<?= $produto['nome']?>.jpg" href="#" alt="<?= $produto['nome']?>">
-							<div class="carousel-caption">
-								<button type="button" class="btn btn-lg">
-									<a href="#"><i class="fa fa-plus-circle fa-2x"></i> DETALHES</a>
-								</button>
-							</div>
+							<img src="<?= $produto['imagem']?>" href="produto-unico.php?id=<?=$produto['id']?>" alt="<?= $produto['nome']?>">
 						</div>
 						<?php
 					endforeach
@@ -83,7 +78,7 @@
 										<li class="col-md-4">
 											<div class="caixa-produtos">
 												<span></span>
-												<p><a href="#"><img src="assets/img/produtos/<?= $produto['nome']?>.jpg" alt=<?= $produto['nome']?> class="img-responsive" /></a></p>
+												<p><a href="produto-unico.php?id=<?=$produto['id']?>"><img src="<?= $produto['imagem']?>" alt=<?= $produto['nome']?> class="img-responsive" /></a></p>
 												<a href="#" class="titulo"><?= $produto['nome']?></a><br/>
 												<?php
 												if($produto['tipo_nome']=="Console") :

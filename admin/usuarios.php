@@ -21,7 +21,6 @@
     $alterado = 1;
   }
 
-
 ?>
 
 <head>
@@ -31,12 +30,15 @@
   <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/usuarios.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+  <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
 </head>
 
 
 <body>
-
-<h1 align="center">Usuarios</h1>
+<?php include('header.php')?>
+<h1 align="center">Usuários</h1>
 
 <?php if($removido == 1) { ?>
   <p class = "alert-success container" align="center">Usuario removido com sucesso</p>
@@ -52,14 +54,13 @@
 
 <button class="botao-cadastrar btn btn-success" onclick="location.href = 'form-usuario.php'">Cadastrar Usuario</button>
 
-<div class="panel-body">
+<div class="panel-body container">
   <div class="table-responsive">
     <table class="table table-striped table-bordered table-hover">
       <thead>
         <tr>
           <th>Id</th>
           <th>Login</th>
-          <th>Senha (isso aqui vai sair?)</th>
           <th colspan="2">Ação</th>
         </tr>
       </thead>
@@ -68,7 +69,6 @@
         <tr>
           <td><?=$usuario['id']?></td>
           <td><?=$usuario['login']?></td>
-          <td><?=$usuario['senha']?></td>
           <td>
             <a href="form-altera-usuario.php?id=<?=$usuario['id']?>"><i class="fa fa-pencil fa-lg"></i></a>
           </td>
@@ -80,10 +80,8 @@
       </tbody>
     </table>
   </div>
-
 </div>
- 
-
+<?php include("footer.php"); ?>
 </body>
 
 

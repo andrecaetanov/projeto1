@@ -17,14 +17,8 @@ require_once("mostra-alerta.php"); ?>
 
     <!-- Custom Fonts -->
     <link href="assets/bootstrap-3.3.7-dist/css/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
-    
-    <link rel="stylesheet" type="text/css" href="assets/css/header.css">
-    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
 </head>
 <body>
-    <?php require_once("header.php"); ?>
-
     <div class="container">
 
     <div>

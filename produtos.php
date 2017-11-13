@@ -149,22 +149,22 @@
             </h4>
             <div>
               <!-- Imagens dos produtos -->
-              <ul class="thumbnails">
+              <ul>
               <?php
               foreach($produtos as $produto) :
                 ?>                       
                 <li class="col-md-3">
                   <div class="caixa-produtos">
                     <span></span>
-                    <p><a href="#"><img src="assets/img/Yoshi.png" alt=<?= $produto['nome']?> class="img-responsive" /></a></p>
-                    <a href="#" class="titulo"><?= $produto['nome']?></a><br/>
+                    <p><a href="produto-unico.php?id=<?=$produto['id']?>"><img src="admin/<?=$produto['imagem']?>" alt=<?= $produto['nome']?> class="img-responsive" /></a></p>
+                    <a href="produto-unico.php?id=<?=$produto['id']?>" class="titulo"><?= $produto['nome']?></a><br/>
                     <?php
                     if($produto['tipo_nome']=="Console") :
                       ?>
-                      <a href="#" class="categoria"><?= $produto['tipo_nome']?></a>
+                      <a href="produto-unico.php?id=<?=$produto['id']?>" class="categoria"><?= $produto['tipo_nome']?></a>
                       <?php else :
                       ?>
-                      <a href="#" class="categoria"><?= $produto['tipo_nome']?> <?= $produto['plataforma_nome']?></a>
+                      <a href="produto-unico.php?id=<?=$produto['id']?>" class="categoria"><?= $produto['tipo_nome']?> <?= $produto['plataforma_nome']?></a>
                       <?php
                     endif
                     ?>

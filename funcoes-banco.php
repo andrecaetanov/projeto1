@@ -15,6 +15,13 @@ function getProdutos($conexao){
 
 }
 
+function getProdutoPorId($conexao, $id){
+$query = "SELECT p.* ,t.nome as tipo_nome,pl.nome as plataforma_nome from produto as p join tipo as t on t.id=p.tipo_id join plataforma as pl on pl.id=p.plataforma_id WHERE p.id = {$id}";
+  $resultado = mysqli_query($conexao, $query);
+
+  return $produto = mysqli_fetch_assoc($resultado);
+    
+}
 
 function getCategorias($conexao){
   $query = "SELECT * FROM plataforma";

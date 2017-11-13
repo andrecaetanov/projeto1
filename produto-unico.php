@@ -1,11 +1,23 @@
 <!DOCTYPE html>
+
+<?php
+  include("funcoes-banco.php");
+  include("conexao.php");
+  $id = $_GET['id'];
+
+  $produto = getProdutoPorId($conexao, $id);
+?>
+
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/produto-unico.css">
   <?php include("head-navbar-footer.php");  ?>
-  <title>Nome do jogo</title>
+  <title><?=$produto['nome']?></title>
+
+
 
 </head>
 <body>
@@ -13,17 +25,40 @@
   <?php include("header.php"); ?>
   
 
-  
-  <img id="imagem-jogo" src="assets/img/produtos/Super Luigi U.jpg" alt="">
-
+  <div id="div-imagem">
+    <img id="imagem-jogo" src="admin/<?=$produto['imagem']?>" alt="" class="img-responsive">
+  </div>
   <div id="texto">
 
-    <h1 id="nome-produto">NOME DO JOGO</h1>
+    <h1 id="nome-produto"><?=$produto['nome']?></h1>
     <div class="descricao">
-      <p>Plataforma: PC</p>
-      <p>Preco: R$99.99</p>
-      <p> Descricao: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+      <p>Plataforma: <?=$produto['plataforma_nome']?></p>
+      <p>Tipo: <?=$produto['tipo_nome']?></p>
+      <p>Data de Lançamento: <?=$produto['data_lancamento']?></p>
+      <?php 
+        if($produto['disponivel'] == 1) 
+          $disponivel = "Sim";
+        else
+          $disponivel = "Nao";
+      ?>
+      <p>Disponivel: <?=$disponivel?></p>
+      
+      <?php 
+        if($produto['usado'] == 1) 
+          $usado = "Sim";
+        else
+          $usado = "Nao";
+      ?>
+      <p>Usado: <?=$usado?></p>
+      
+      <p>Preco: <?=$produto['preco']?></p>
+      <div>
+       <p> <?=$produto['descricao']?></p>
+      </div>
     </div>
+    
+    
+    
   </div>
 
 

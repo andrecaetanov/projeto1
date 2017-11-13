@@ -63,9 +63,5 @@
 }
 
 .form-group .select-tipo {
-	width: auto;
-}
-
-.form-group .select-plataforma {
-	width: auto;
+	width: 60%;
 }

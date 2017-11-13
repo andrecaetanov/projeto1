@@ -4,6 +4,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/form-usuario.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+  <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
   <title>Novo Usuario</title>
 </head>
 
@@ -20,6 +23,7 @@
 ?>
 <body>
 
+  <?php include("header.php"); ?>
   <div class="container">
     <h1>Alterar Usuario</h1>
 
@@ -40,5 +44,8 @@
       </table>
       </form>
     </div>
+
+    <?php include("footer.php"); ?>
+
 </body>
 </html>
