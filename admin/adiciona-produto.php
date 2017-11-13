@@ -23,13 +23,13 @@
 	if(isset($_FILES['pic']))
 	{
 		$ext = strtolower(substr($_FILES['pic']['name'],-4)); //Pegando extensão do arquivo
-		$new_name = md5(uniqid(time())) . $ext; //Definindo um novo nome para o arquivo
-		$dir = './assets/img/'; //Diretório para uploads
+		$new_name = time() . $ext; //Definindo um novo nome para o arquivo
+		$dir = '../assets/img/'; //Diretório para uploads
 		$caminho_completo = $dir . $new_name;
 		if(file_exists ($caminho_completo)) {
 			unlink($caminho_completo);
 		}
-		move_uploaded_file($_FILES['pic']['tmp_name'], $dir.$new_name); //Fazer upload do arquivo
+		move_uploaded_file($_FILES['pic']['tmp_name'], $caminho_completo); //Fazer upload do arquivo
 	} 
 	
 	if(insereProduto($conexao, $nome, $preco, $descricao, $data_lancamento, $plataforma, $tipo, $usado, $disponivel, $caminho_completo)) {

@@ -11,6 +11,10 @@
 .titulo {
 	text-align: center;
 }
+.visualizar {
+	color: #006600;
+	cursor: pointer;
+}
 
 .excluir{
 	color: #EE0000;
@@ -34,4 +38,8 @@
 .pesquisa {
 	display: flex;
 	justify-content: space-between;
+}
+
+.img-responsive {
+	display: inline-block;
 }

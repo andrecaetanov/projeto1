@@ -66,11 +66,11 @@ function getProduto($conexao, $id) {
 function getImagem($conexao, $id) {
   $query = "select imagem from produto where id = {$id}";
   $resultado = mysqli_query($conexao, $query);
-  $produto = mysqli_fetch_assoc($resultado);
-  return $produto;
+  $imagem = mysqli_fetch_assoc($resultado);
+  return $imagem;
 }
 
-function alteraProduto($conexao, $id, $nome, $preco, $descricao, $data_lancamento, $plataforma, $tipo, $usado, $disponivel) {
-  $query = "update produto set nome = '{$nome}', preco = {$preco}, descricao = '{$descricao}', data_lancamento = '{$data_lancamento}', plataforma_id = {$plataforma}, tipo_id = {$tipo}, usado = {$usado}, disponivel = {$disponivel} where id = '{$id}' ";
+function alteraProduto($conexao, $id, $nome, $preco, $descricao, $data_lancamento, $plataforma, $tipo, $usado, $disponivel, $imagem) {
+  $query = "update produto set nome = '{$nome}', preco = {$preco}, descricao = '{$descricao}', data_lancamento = '{$data_lancamento}', plataforma_id = {$plataforma}, tipo_id = {$tipo}, usado = {$usado}, disponivel = {$disponivel}, imagem = '{$imagem}' where id = '{$id}' ";
   return mysqli_query($conexao, $query);
 }
