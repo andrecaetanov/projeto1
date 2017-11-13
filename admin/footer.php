@@ -1,7 +1,5 @@
  <!-- __________________________________________________________________________________________________________________________________ -->
   <!-- Rodapé -->
-  <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
-  <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
   <footer>
     <div class="footer-copyright">
     	 <div class="retornar-ao-topo">

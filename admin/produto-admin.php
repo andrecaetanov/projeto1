@@ -9,22 +9,19 @@ require_once("consulta-banco.php");
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
-	<title></title>
 	<link rel="stylesheet" type="text/css" href="assets/css/produto-admin.css">
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.css">
-	<!-- DataTables CSS -->
-    <link href="assets/bootstrap-3.3.7-dist/css/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
-
-    <!-- DataTables Responsive CSS -->
-    <link href="assets/bootstrap-3.3.7-dist/css/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="assets/bootstrap-3.3.7-dist/css/sb-admin-2.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
     <link href="assets/bootstrap-3.3.7-dist/css/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="assets/css/header.css">
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+    <title>Produtos Admin</title>
+
 </head>
 <body>
+    <header>
+        <?php require_once("header.php"); ?>
+    </header>
 	<div class="container">
 		<div class="principal-produto-admin">
             <div class="titulo">
@@ -138,6 +135,8 @@ require_once("consulta-banco.php");
             <!-- /.panel-body -->
 		</div>
 	</div>
+
+    <?php require_once("footer.php"); ?>
 
     <script src="../assets/js/jquery-1.9.1.js"></script>
     <script src="../assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
