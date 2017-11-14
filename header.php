@@ -48,6 +48,9 @@
               </form>
             </div>
           </li>
+          <li>
+            <a href="admin/login.php" class="glyphicon glyphicon-lock"></a>
+          </li>
         </ul>
       </nav>
     </header>

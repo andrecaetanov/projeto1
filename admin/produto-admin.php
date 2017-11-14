@@ -9,26 +9,19 @@ require_once("consulta-banco.php");
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
-	<title></title>
 	<link rel="stylesheet" type="text/css" href="assets/css/produto-admin.css">
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.css">
-	<!-- DataTables CSS -->
-    <link href="assets/bootstrap-3.3.7-dist/css/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
-
-    <!-- DataTables Responsive CSS -->
-    <link href="assets/bootstrap-3.3.7-dist/css/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="assets/bootstrap-3.3.7-dist/css/sb-admin-2.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
     <link href="assets/bootstrap-3.3.7-dist/css/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/header.css">
     <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+    <title>Produtos Admin</title>
+
 </head>
 <body>
-    <?php include("header.php") ?>
+    
+        <?php require_once("header.php"); ?>
+    
 	<div class="container">
 		<div class="principal-produto-admin">
             <div class="titulo">
@@ -55,13 +48,14 @@ require_once("consulta-banco.php");
                                 <th align=center><center>Tipo</center></th>
                                 <th align=center><center>Usado</center></th>
                                 <th align=center><center>Disponível</center></th>
-                        		<th colspan="2" ><center>Ação</center></th>
+                        		<th colspan="3" ><center>Ação</center></th>
                             </tr>
                         </thead>
                         <tbody>
                         	<?php 
                         		$produtos = listaProdutos($conexao);
                         		foreach ($produtos as $produto) :
+                                    $id = $produto['id'];
                         	?>
                             <tr>
                                 <td><?= $produto['id'] ?></td>
@@ -74,37 +68,12 @@ require_once("consulta-banco.php");
                                 <td><?= $produto['usado'] ?></td>
                                 <td><?= $produto['disponivel'] ?></td>
                                 <td>
-                                
-                                    <center><a href="" class="glyphicon glyphicon-trash excluir" data-toggle="modal" data-target="#myModal" ></a></center>
-                                    <!-- Modal -->
-                                    <div id="myModal" class="modal fade" role="dialog">
-                                        <div class="modal-dialog">
-
-                                        <!-- Modal content-->
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">Atenção</h4>
-                                            </div>
-                                            <div class="modal-body">
-                                            <p>Realmente quer deletar este produto?</p>
-                                            <form action="remove-produto.php" method="post">
-                                                <input type="hidden" name="id" value="<?= $produto['id'] ?>">
-                                                
-                                            
-                                            
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button class="btn btn-danger">Sim</button>
-                                                </form>
-                                                <button type="submit" class="btn btn-primary" data-dismiss="modal">Fechar</button>
-                                            
-                                            </div>
-                                        </div>
-
-                                        </div>
-                                    </div>
-                                
+                                    <?php $visualizar = "visualizar".$id; ?>
+                                        <center><a href="#<?= $visualizar?>" class="glyphicon glyphicon-eye-open visualizar" data-toggle="modal"  ></a></center>
+                                </td>
+                                <td>
+                                    <?php $deletar = "deletar".$id; ?>
+                                        <center><a href="#<?= $deletar?>" class="glyphicon glyphicon-trash excluir" data-toggle="modal"  ></a></center>
                                 </td>
                                 <td>
                                     <form action="editar-produto.php" method="post">
@@ -112,7 +81,51 @@ require_once("consulta-banco.php");
                                         <center><input type="image" name="editar" class="glyphicon glyphicon-pencil editar" value=" " onClick="this.form.submit()"></center>
                                     </form>
                                 </td>
+                                <!-- Modal Visualizar-->
+                                <div id="<?= $visualizar?>" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Visualizar Imagem do Produto</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container imagem-produto">
+                                                    <img src="<?= $produto['imagem']?>" class="img-responsive">
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal Delete -->
+                                <div id="<?= $deletar?>" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Atenção</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Realmente quer deletar este produto? <?= $id?></p>
+                                                <form action="remove-produto.php" method="post">
+                                                <input type="hidden" name="id" value="<?= $produto['id'] ?>">
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button class="btn btn-danger">Sim</button>
+                                                </form>
+                                                <button type="submit" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </tr>
+                            
+                            
                         <?php endforeach ?>
                         </tbody>
                     </table>
@@ -122,8 +135,12 @@ require_once("consulta-banco.php");
             <!-- /.panel-body -->
 		</div>
 	</div>
-    
-    <?php include("footer.php") ?>
+
+    <?php require_once("footer.php"); ?>
+
+    <script src="../assets/js/jquery-1.9.1.js"></script>
+    <script src="../assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/tabela.js"></script>
 
 </body>
 </html>

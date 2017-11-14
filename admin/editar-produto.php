@@ -18,17 +18,18 @@ $disponivel = $produto['disponivel'] ? "checked='checked'" : "";
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
-	<title></title>
 	<link rel="stylesheet" type="text/css" href="assets/css/cadastra-produto.css">
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="assets/css/header.css">
     <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
     <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+
+	<title>Editar Produto</title>
 </head>
 <body>
-	<header>
+	
 		<?php require_once("header.php"); ?>
-	</header>
+	
 	<div class="container">
 		<div class="principal-atualiza-produto">
 			<div class="titulo">
