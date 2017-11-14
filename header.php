@@ -19,17 +19,17 @@
         <ul class="conteudo">
           <li><a href='index.php'>Home</a></li>
           <li><a href='quemSomos.php'>Sobre Nós</a></li>
-          <li><a href='#'>Produtos</a>
+          <li><a href='produtos.php'>Produtos</a>
             <ul class="zindex">
               <?php $tipos = listaTipoHeader($conexao);
               foreach ($tipos as $tipo) :
               ?>
-              <li><a href='#' id="consoles"><?= $tipo['nome'] ?></a>
+              <li><a href='produtos.php?plataforma=0&tipo=<?=$tipo['id']?>' id="consoles"><?= $tipo['nome'] ?></a>
                 <ul>
                   <?php $plataformas = listaPlataformaHeader($conexao);
                   foreach ($plataformas as $plataforma) :
                   ?>
-                  <li><a href='#'><?= $plataforma['nome'] ?></a></li>
+                  <li><a href='produtos.php?plataforma=<?=$plataforma['id']?>&tipo=<?=$tipo['id']?>'><?= $plataforma['nome'] ?></a></li>
                 <?php endforeach ?>
                 </ul>
               </li>

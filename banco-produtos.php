@@ -10,7 +10,7 @@
 }
 function listaSlides($conexao) {
    $produtos = array();
-    $resultado = mysqli_query($conexao, "select p.nome from produto as p order by p.id desc limit 3");
+    $resultado = mysqli_query($conexao, "select p.* from produto as p order by p.id desc limit 3");
     $i;
    		while($produto = mysqli_fetch_assoc($resultado)){
         array_push($produtos, $produto);

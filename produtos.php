@@ -3,8 +3,8 @@
 <?php
 
   function existeBusca(){
-    if(isset($_POST['nome']) || isset($_POST['precoMin']) || isset($_POST['precoMax']) 
-        || isset($_POST['novo']) || isset($_POST['usado']) || isset($_POST['plataforma']) )
+    if(isset($_GET['nome']) || isset($_GET['precoMin']) || isset($_GET['precoMax']) 
+        || isset($_GET['novo']) || isset($_GET['usado']) || isset($_GET['plataforma']) )
       return true;
 
     return false;
@@ -17,37 +17,35 @@
   $produtos = listaProdutosDeProdutos($conexao);
 
   if(existeBusca()){
-    if(isset($_POST['nome']))
-      $nome = $_POST['nome'];
+    if(isset($_GET['nome']))
+      $nome = $_GET['nome'];
     else
       $nome = "";
 
     $query = "SELECT p.*,t.nome AS tipo_nome,pl.nome AS plataforma_nome FROM produto AS p join tipo AS t
     ON t.id=p.tipo_id join plataforma AS pl on pl.id=p.plataforma_id WHERE p.nome LIKE '%{$nome}%'";
 
-    if(isset($_POST['precoMin'])){ 
-      if($_POST['precoMin'] != "")
-        $precoMin = " AND preco >= {$_POST['precoMin']}";
-      else
-        $precoMin = "";
+    $precoMin = "";
+    if(isset($_GET['precoMin'])){ 
+      if($_GET['precoMin'] != "")
+        $precoMin = " AND preco >= {$_GET['precoMin']}";
     }
     
     $query.=$precoMin;
 
-    if(isset($_POST['precoMax'])){
-      if($_POST['precoMax'] != "")
-        $precoMax = " AND preco <= {$_POST['precoMax']}";
-      else
-        $precoMax = "";  
+    $precoMax = "";
+    if(isset($_GET['precoMax'])){
+      if($_GET['precoMax'] != "")
+        $precoMax = " AND preco <= {$_GET['precoMax']}";  
     }
      
     $query.=$precoMax;
 
-    if(isset($_POST['plataforma'])){
-      if($_POST['plataforma'] != 0)
-        $plataforma = " AND p.plataforma_id = {$_POST['plataforma']}";
-      else
-        $plataforma = "";
+
+    $plataforma = "";
+    if(isset($_GET['plataforma'])){
+      if($_GET['plataforma'] != 0)
+        $plataforma = " AND p.plataforma_id = {$_GET['plataforma']}";
     }
 
     $query .= $plataforma;
@@ -55,21 +53,21 @@
     $novo = " AND (usado = 0 OR usado = 1)";
 
 
-    if(isset($_POST['novo']))    
-      if( $_POST['novo'] == 1 && ( !isset($_POST['usado']) || $_POST['usado'] == 0  ) )
+    if(isset($_GET['novo']))    
+      if( $_GET['novo'] == 1 && ( !isset($_GET['usado']) || $_GET['usado'] == 0  ) )
         $novo = " AND usado = 0";
 
-    if(isset($_POST['usado']))  
-      if( !isset($_POST['novo']) || ($_POST['novo'] == 0 ) && $_POST['usado'] == 1 )
+    if(isset($_GET['usado']))  
+      if( !isset($_GET['novo']) || ($_GET['novo'] == 0 ) && $_GET['usado'] == 1 )
         $novo = " AND usado = 1";
 
     $query .= $novo;
 
-    if(isset($_POST['tipo'])){
-      if($_POST['tipo'] != 0)
-        $tipo = " AND p.tipo_id = {$_POST['tipo']}";
-      else
-        $tipo = "";
+
+    $tipo = "";
+    if(isset($_GET['tipo'])){
+      if($_GET['tipo'] != 0)
+        $tipo = " AND p.tipo_id = {$_GET['tipo']}";
     }
 
     $query.= $tipo;
@@ -96,7 +94,7 @@
   
   <?php include("header.php"); ?>
   
-  <form id="retangulo" class="container form-group" role="form" method="post">
+  <form id="retangulo" class="container form-group" role="form" method="get">
     
     <p class="titulo"> Encontre seu Jogo!</p>
     
@@ -156,7 +154,7 @@
                 <li class="col-md-3">
                   <div class="caixa-produtos">
                     <span></span>
-                    <p><a href="produto-unico.php?id=<?=$produto['id']?>"><img src="admin/<?=$produto['imagem']?>" alt=<?= $produto['nome']?> class="img-responsive" /></a></p>
+                    <p><a href="produto-unico.php?id=<?=$produto['id']?>"><img src="<?=$produto['imagem']?>" alt=<?= $produto['nome']?> class="img-responsive" /></a></p>
                     <a href="produto-unico.php?id=<?=$produto['id']?>" class="titulo"><?= $produto['nome']?></a><br/>
                     <?php
                     if($produto['tipo_nome']=="Console") :

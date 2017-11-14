@@ -23,8 +23,12 @@ require_once("consulta-banco.php");
 
     <!-- Custom Fonts -->
     <link href="assets/bootstrap-3.3.7-dist/css/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
 </head>
 <body>
+    <?php include("header.php") ?>
 	<div class="container">
 		<div class="principal-produto-admin">
             <div class="titulo">
@@ -70,37 +74,37 @@ require_once("consulta-banco.php");
                                 <td><?= $produto['usado'] ?></td>
                                 <td><?= $produto['disponivel'] ?></td>
                                 <td>
-                                    
-                                        <center><a href="" class="glyphicon glyphicon-trash excluir" data-toggle="modal" data-target="#myModal" ></a></center>
-                                        <!-- Modal -->
-                                        <div id="myModal" class="modal fade" role="dialog">
-                                          <div class="modal-dialog">
+                                
+                                    <center><a href="" class="glyphicon glyphicon-trash excluir" data-toggle="modal" data-target="#myModal" ></a></center>
+                                    <!-- Modal -->
+                                    <div id="myModal" class="modal fade" role="dialog">
+                                        <div class="modal-dialog">
 
-                                            <!-- Modal content-->
-                                            <div class="modal-content">
-                                              <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                <h4 class="modal-title">Atenção</h4>
-                                              </div>
-                                              <div class="modal-body">
-                                                <p>Realmente quer deletar este produto?</p>
-                                                <form action="remove-produto.php" method="post">
-                                                    <input type="hidden" name="id" value="<?= $produto['id'] ?>">
-                                                    
-                                                
-                                                
-                                              </div>
-                                              <div class="modal-footer">
-                                                    <button class="btn btn-danger">Sim</button>
-                                                    </form>
-                                                    <button type="submit" class="btn btn-primary" data-dismiss="modal">Fechar</button>
-                                                
-                                              </div>
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Atenção</h4>
                                             </div>
-
-                                          </div>
+                                            <div class="modal-body">
+                                            <p>Realmente quer deletar este produto?</p>
+                                            <form action="remove-produto.php" method="post">
+                                                <input type="hidden" name="id" value="<?= $produto['id'] ?>">
+                                                
+                                            
+                                            
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button class="btn btn-danger">Sim</button>
+                                                </form>
+                                                <button type="submit" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                                            
+                                            </div>
                                         </div>
-                                    
+
+                                        </div>
+                                    </div>
+                                
                                 </td>
                                 <td>
                                     <form action="editar-produto.php" method="post">
@@ -118,10 +122,8 @@ require_once("consulta-banco.php");
             <!-- /.panel-body -->
 		</div>
 	</div>
-
-    <script src="../assets/js/jquery-1.9.1.js"></script>
-    <script src="../assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/tabela.js"></script>
+    
+    <?php include("footer.php") ?>
 
 </body>
 </html>

@@ -73,36 +73,34 @@
             <a href="form-altera-usuario.php?id=<?=$usuario['id']?>"><i class="fa fa-pencil fa-lg"></i></a>
           </td>
           <td>
-					<center><a href="" class="glyphicon glyphicon-trash excluir" data-toggle="modal" data-target="#myModal" style="color: red" ></a></center>
-					<!-- Modal -->
-					<div id="myModal" class="modal fade" role="dialog">
-						<div class="modal-dialog">
+              <center><a href="" class="glyphicon glyphicon-trash excluir" data-toggle="modal" data-target="#myModal" ></a></center>
+              <!-- Modal -->
+              <div id="myModal" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
 
-							<!-- Modal content-->
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal">&times;</button>
-									<h4 class="modal-title">Atenção</h4>
-								</div>
-								<div class="modal-body">
-									<p>Realmente quer deletar este usuario?</p>
-									<form action="deleta-usuario.php" method="post">
-										<input type="hidden" name="id" value="<?= $usuario['id'] ?>">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                      <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Atenção</h4>
+                      </div>
+                      <div class="modal-body">
+                      <p>Realmente quer deletar este usuario?</p>
+                      <form action="deleta-usuario.php" method="post">
+                          <input type="hidden" name="id" value="<?= $usuario['id'] ?>">
+                      </div>
+                      <div class="modal-footer">
+                          <button class="btn btn-danger">Sim</button>
+                          </form>
+                          <button type="submit" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                      
+                      </div>
+                  </div>
 
-
-
-									</div>
-									<div class="modal-footer">
-										<button class="btn btn-danger">Sim</button>
-									</form>
-									<button type="submit" class="btn btn-primary" data-dismiss="modal">Fechar</button>
-
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</td>
+                  </div>
+              </div>
+          
+          </td>
         </tr>
         <?php } ?>
       </tbody>
