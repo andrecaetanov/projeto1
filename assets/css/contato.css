@@ -5,7 +5,7 @@ body {
 }
 
 .main-contato {
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 
 .main-contato div h1 {
@@ -13,8 +13,11 @@ body {
 }
 
 .main-contato .titulo-principal {
-    font-size: 200%;
+    color: rgb(29, 139, 29);
+    font-family: 'Bangers';
     text-align: center;
+    margin-top: 3%;
+    font-size: 300%;  
 }
 
 .main-contato .contato-wrapper {
@@ -23,13 +26,14 @@ body {
     text-shadow: 0.04em 0.04em #ddd;
     box-shadow: 0 0 1em #444;
     margin-bottom: 1.2em;
+    padding: 0.5em 0;
 }
 
 .main-contato #contato-enviar {
     margin-bottom: 1.1em;
     float: right;
     box-shadow: 0 0 1em #444;
-    margin-top: 0.5em;
+    margin-top: 1em;
     background-color: #448D00;
     border: 0;
 }

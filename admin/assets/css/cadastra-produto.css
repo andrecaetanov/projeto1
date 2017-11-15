@@ -5,16 +5,8 @@
 	text-align: center;
 }
 
-.titulo {
-	
-}
-
-.formulario {
-	text-align: left;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
+table td {
+	border: none !important;
 }
 
 .btn-enviar {
