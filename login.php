@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Minha Loja</title>
-	<link rel="stylesheet" type="text/css" href="../assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 
 </head>
 <body>

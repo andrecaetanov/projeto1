@@ -44,10 +44,11 @@
 
 
 #titulo{
-    color: #FFF; 
+    color: rgb(29, 139, 29);
+    font-family: 'Bangers';
     text-align: center;
+    font-size: 300%;  
     margin-top: 5%;
-    font-size: 300%   
 }
 
 

@@ -2,25 +2,47 @@ body{
   background-color: black;
 }
 
+.row{
+  margin-left: 5%;
+}
+
 #imagem-jogo{
   margin-top: 5%;
   margin-bottom: 5%;
-  margin-left: 5%;
-  vertical-align: top;  
   display: inline-block;
   border: 1.5px solid rgba(192, 255, 0, 1);
 }
 
 #div-imagem{
-  width: 50%;
-  height: 50%;
-  margin-right: 0%;
+  vertical-align: top;
+}
+
+
+@media(min-width: 320px){
+  #div-imagem{
+    width: 90%;
+    height: 100%;
+  }
+}
+
+@media(min-width: 320px){
+  #div-imagem{
+    width: 90%;
+    height: 100%;
+  }
+}
+
+@media(min-width: 1024px){
+  #div-imagem{
+    width: 50%;
+    height: 50%;
+  }
 }
 
 #texto{
   display: inline-block;
-  margin-top: 5%;
-  margin-left: 5%;
+  margin-top: 0.7%;
+  margin-bottom: 2%;
 }
 
 #nome-produto{
@@ -32,6 +54,6 @@ body{
 
 .descricao{
   color: #ffffff;
-  margin-top: 10%;
+  
   
 }

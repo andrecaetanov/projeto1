@@ -11,7 +11,7 @@
       <?php include("header.php"); ?>
 
       <div class="container">
-          <h2 id="titulo" >Missao Aceita: Encontre a Yoshi's Store!</h2>
+          <h2 id="titulo" >Missão Aceita: Encontre a Yoshi's Store!</h2>
           <p class="texto">Olá aventureiro, tenho uma tarefa muito especial para você. Siga o mapa anexado neste pergaminho
           e encontrará tesouros além da sua imaginação! </p>
           <p class="texto">Rua Teste, numero 0, Centro</p>
@@ -37,8 +37,5 @@
       </script>
       
       <?php include("footer.php"); ?>
-      
-      <script src="assets/js/jquery.js"></script>
-      <?php include("script-navbar-footer.php"); ?>
   </body>
 </html>

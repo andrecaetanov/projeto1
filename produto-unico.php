@@ -25,54 +25,43 @@
   <?php include("header.php"); ?>
   
 
-  <div id="div-imagem">
-    <img id="imagem-jogo" src="admin/<?=$produto['imagem']?>" alt="" class="img-responsive">
-  </div>
-  <div id="texto">
+  <div class="row">
+  
+    <div id="div-imagem" class="col-sm-6">
+      <img id="imagem-jogo" src="<?=$produto['imagem']?>" alt="" class="img-responsive"/>
+    </div>
 
-    <h1 id="nome-produto"><?=$produto['nome']?></h1>
-    <div class="descricao">
-      <p>Plataforma: <?=$produto['plataforma_nome']?></p>
-      <p>Tipo: <?=$produto['tipo_nome']?></p>
-      <p>Data de Lançamento: <?=$produto['data_lancamento']?></p>
-      <?php 
-        if($produto['disponivel'] == 1) 
-          $disponivel = "Sim";
-        else
-          $disponivel = "Nao";
-      ?>
-      <p>Disponivel: <?=$disponivel?></p>
-      
-      <?php 
-        if($produto['usado'] == 1) 
-          $usado = "Sim";
-        else
-          $usado = "Nao";
-      ?>
-      <p>Usado: <?=$usado?></p>
-      
-      <p>Preco: <?=$produto['preco']?></p>
-      <div>
-       <p> <?=$produto['descricao']?></p>
+    <div id="texto" class="col-sm-6">
+      <h1 id="nome-produto"><?=$produto['nome']?></h1>
+      <div class="descricao">
+        <p>Plataforma: <?=$produto['plataforma_nome']?></p>
+        <p>Tipo: <?=$produto['tipo_nome']?></p>
+        <p>Data de Lançamento: <?=$produto['data_lancamento']?></p>
+        <?php 
+          if($produto['disponivel'] == 1) 
+            $disponivel = "Sim";
+          else
+            $disponivel = "Nao";
+        ?>
+        <p>Disponivel: <?=$disponivel?></p>
+        
+        <?php 
+          if($produto['usado'] == 1) 
+            $usado = "Sim";
+          else
+            $usado = "Nao";
+        ?>
+        <p>Usado: <?=$usado?></p>
+        
+        <p>Preco: <?=$produto['preco']?></p>
+        
+        <p> <?=$produto['descricao']?></p>
       </div>
     </div>
     
-    
-    
   </div>
 
 
-
-
-
-
-
-
-
-
-
   <?php include("footer.php"); ?>
-  <script src="assets/js/jquery.js"></script>
-  <?php include("script-navbar-footer.php"); ?>
 </body>
 </html>
