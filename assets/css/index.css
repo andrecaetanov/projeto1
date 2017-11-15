@@ -50,6 +50,9 @@
 		font-weight:bold;
 		font-size:11px;
 		margin:15px 0 5px 0;
+		font-family: "Bangers";
+		letter-spacing: 1.5px;
+		font-size:150%;
 	}
 	.caixa-produtos a.categoria{
 		color:#eb4800;
@@ -66,9 +69,11 @@
 		margin-bottom:15px;
 		overflow:hidden;
 		text-transform:uppercase;
-		font-size:15px;
+		font-size:20px;
 		min-height:27px;
 		width:100%;
+		font-family: "Bangers";
+		letter-spacing: 1.5px;
 	}
 
 	h4.titulo strong{
