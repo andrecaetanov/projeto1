@@ -16,3 +16,4 @@
   <script src="assets/js/footer.js"></script>
   <script src="https://use.fontawesome.com/6f8b7aea2d.js"></script>
   <script type="text/javascript" src="js/tabela.js"></script>
+  <script type="text/javascript" src="assets/js/menu-navegacao.js"></script>

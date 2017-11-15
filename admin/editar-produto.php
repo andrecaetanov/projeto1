@@ -31,24 +31,16 @@ $disponivel = $produto['disponivel'] ? "checked='checked'" : "";
 		<?php require_once("header.php"); ?>
 	
 	<div class="container">
-		<div class="principal-atualiza-produto">
-			<div class="titulo">
-				<h1>Atualizar Produto</h1>
-				<?php mostraAlerta("danger"); ?>
-			</div>
-			<div class="container formulario">
-					<form action="atualiza-produto.php" class="form" method="POST" enctype="multipart/form-data">
-					<input type="hidden" name="id" value="<?=$produto['id']?>">	
+		<h2 align="center">Atualizar Produto</h2>
+		<?php mostraAlerta("danger"); ?>
+		<form action="atualiza-produto.php" class="form" method="POST" enctype="multipart/form-data">
+			<input type="hidden" name="id" value="<?=$produto['id']?>">	
 
-							<?php require_once("formulario-base-produto.php"); ?>
+			<?php require_once("formulario-base-produto.php"); ?>
 
-						<button class="btn btn-success btn-enviar">Alterar produto</button>
-						<a href="produto-admin.php"><input type="button" class="btn btn-primary" name="voltar" value="Voltar"></a>
-					</form>
-				
-			</div>
-			
-		</div>
+			<button class="btn btn-success btn-enviar">Alterar produto</button>
+			<a href="produto-admin.php"><input type="button" class="btn btn-primary" name="voltar" value="Voltar"></a>
+		</form>
 	</div>
 <footer>
 	<?php require_once("footer.php"); ?>

@@ -1,27 +1,28 @@
-<div class="row row1">
-  <div class="form-group col-sm-6">
-    <label>Nome</label>
-    <input type="text" name="nome" class="form-control" required value="<?= $produto['nome']?>">
-  </div>
-  <div class="form-group col-sm-2">
-    <label>Preco</label>
-    <input type="text" name="preco" class="form-control" required value="<?= $produto['preco']?>">
-  </div>
-  <div class="form-group col-sm-4">
-    <label>Data de lançamento</label>
-    <input type="text" name="data_lancamento" class="form-control data_lancamento" value="<?= $produto['data_lancamento']?>">
-  </div>
-</div>
-<div class="row row2">
-  <div class="form-group descricao">
-    <label>Descricao</label>
-    <textarea name="descricao" class="form-control desc" rows="6"><?= $produto['descricao']?></textarea>
-  </div>
-  
-</div>
-<div class="row row3">
-  <div class="row listagem">
-    <div class="form-group form-select">
+<table class="table table-responsive-sm">
+  <tr>
+    <td colspan="2">
+      <label>Nome</label>
+      <input class="form-control" type="text" name="nome" required value="<?= $produto['nome']?>">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label>Preço</label>
+      <input class="form-control" type="text" name="preco" required value="<?= $produto['preco']?>">
+    </td>
+    <td>
+      <label>Data de Lançamento</label>
+      <input type="text" name="data_lancamento" class="form-control" value="<?= $produto['data_lancamento']?>">
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <label>Descrição</label>
+      <textarea name="descricao" class="form-control desc" rows="6"><?= $produto['descricao']?></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td>
       <label>Plataforma</label>
       <select name="plataforma" class="form-control select-plataforma">
         <?php 
@@ -31,9 +32,8 @@
         <option value="<?= $plataforma['id']?>" <?=$selected?> ><?= $plataforma['nome'] ?></option>
         <?php endforeach ?>
       </select>
-    </div>
-
-    <div class="form-group form-select">
+    </td>
+    <td>
       <label>Tipo</label>
       <select name="tipo" class="form-control select-tipo">
         <?php 
@@ -43,19 +43,22 @@
         <option value="<?= $tipo['id']?>" <?=$selected?> ><?= $tipo['nome'] ?></option>
         <?php endforeach ?>
       </select>
-    </div>
-  </div>
-  <div class="row form-checkbox">
-    <div class="form-group form-check form-check-inline">
+      
+    </td>
+  </tr>
+  <tr>
+    <td>
       <label>Usado</label>
       <input type="checkbox" name="usado" class="checkbox" <?=$usado?>>
-    </div>
-    <div class="form-group">
+    </td>
+    <td>
       <label>Disponível</label>
       <input type="checkbox" name="disponivel" class="checkbox" <?=$disponivel?>>
-    </div>
-  </div>
-  <div class="row form-imagem">
-    <input type="file" name="pic" accept="image/*">
-  </div>
-</div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <input type="file" name="pic" accept="image/*">
+    </td>
+  </tr>
+</table>
