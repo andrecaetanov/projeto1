@@ -48,7 +48,7 @@
 							endif;
 							$i++;
 							?>
-							<img src="<?= $produto['imagem']?>" href="produto-unico.php?id=<?=$produto['id']?>" alt="<?= $produto['nome']?>">
+							<a href="produto-unico.php?id=<?=$produto['id']?>"><img src="<?= $produto['imagem']?>" href="produto-unico.php?id=<?=$produto['id']?>" alt="<?= $produto['nome']?>"></a>
 						</div>
 						<?php
 					endforeach
@@ -83,11 +83,11 @@
 												<?php
 												if($produto['tipo_nome']=="Console") :
 													?>
-													<a href="#" class="categoria"><?= $produto['tipo_nome']?></a>
+													<a href="produto-unico.php?id=<?=$produto['id']?>" class="categoria"><?= $produto['tipo_nome']?></a>
 													<?php
 												else :
 													?>
-													<a href="#" class="categoria"><?= $produto['tipo_nome']?> <?= $produto['plataforma_nome']?></a>
+													<a href="produto-unico.php?id=<?=$produto['id']?>" class="categoria"><?= $produto['tipo_nome']?> <?= $produto['plataforma_nome']?></a>
 													<?php
 												endif
 												?>
