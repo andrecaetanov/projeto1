@@ -31,20 +31,23 @@ ol, ul {
 	}
 
 	.footer-principal {
-		background:url(../img/misc/footer.jpg) no-repeat left top;
-		min-height: 31vh;
-		width: 100%;
+		background:url(../img/misc/footer.jpg)  center;
+	}
+	@media(max-width: 991px){
+		.footer-principal{
+		background:url(../img/misc/footermenor.jpg) no-repeat left top;
 		background-size: cover;
 		background-position: center;
 
-	}
+		}
 
+	}
 	.footer-copyright p {
 		margin: 10px;
 		color: #ccc;
 	}
 	.footer-principal p{
-		color: white;
+		color: #ffffff;
 	}
 
 	.footer-principal ul {
@@ -54,9 +57,11 @@ ol, ul {
 
 	.footer-principal h5 {
 		font-size: 18px;
-		color: black;
+		color: #000000;
 		font-weight: bold;
 		margin-top: 30px;
+		font-family: "Bangers";
+		letter-spacing: 1.5px;
 	}
 
 	.footer-principal h2 a{
@@ -66,24 +71,19 @@ ol, ul {
 	}
 
 	.footer-principal a {
-		color: white;
+		color: #ffffff;
 		text-decoration: none;
 	}
 
 	.footer-principal a:hover, a:focus {
 		font-weight: bold;
 	}
-
-	footer .redes-sociais {
-		text-align: center;
-		padding-top: 0px;
-		padding-bottom: 16px;
-	}
-
+	
 	footer .redes-sociais a {
 		font-size: 32px;
 		color: #f9f9f9;
-		padding: 10px;
+		padding-right: 10px;
+		padding-left: 10px;
 		transition: 0.2s;
 	}
 	footer .redes-sociais a:hover {
@@ -103,11 +103,20 @@ ol, ul {
 	}
 	.retornar-ao-topo{
 		display: inline-block;
+		margin-top: 1%;
+		float: left;
 	}
-
+	footer .redes-sociais {
+		text-align: center;
+		padding-top: 0px;
+	
+	}
+	footer .menu ul{
+		margin-bottom: 0;
+	}
 	footer .menu{
 		text-align: center;
-		background-color: rgba(0,0,0,0.2);
+
 		border-radius: 10px;
 	}
 
