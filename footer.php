@@ -3,13 +3,14 @@
   <footer>
     <div class="footer-principal">
       <!-- Botão de retornar ao topo -->
-      <div class="retornar-ao-topo">
-        <button type="button" class="btn btn-default btn-lg">
+      
+      <!-- Fim botão de retornar ao topo -->
+      <div class="row">     
+        <div class="retornar-ao-topo">
+        <button type="button" class="btn btn-default btn-mg">
           <i class="fa fa-angle-up fa-2x"></i>
         </button>
-      </div>
-      <!-- Fim botão de retornar ao topo -->
-      <div class="row no-margin">     
+        </div>
         <div class="col-md-2 col-md-offset-1">
           <div class="menu">
             <h5>Navegação</h5>
@@ -22,22 +23,22 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-2 col-md-offset-6">
+        <div class="col-md-2 col-md-offset-5">
           <div class="menu">
-            <h5>Yoshi's Store</h5>
+            <h5>Informações</h5>
             <ul>
-              <p>Rua Yoshi, Bairro Island, Mario World.</p>
-              <p>(32)99999-9999</p>
-              <p>(32)3232-3232</p>
-              <p>yoshistore@yoshi.com</p>
+              <li><p>Rua Yoshi, Bairro Island, Mario World.</p></li>
+              <li><p>(32)99999-9999</p></li>
+              <li><p>(32)3232-3232</p></li>
+              <li><p>yoshistore@yoshi.com</p></li>
+              <li> 
+                <div class="redes-sociais">
+                  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+                </div>
+              </li>
             </ul>
-          </div>
-        </div>
-        <div class="col-md-3 col-md-offset-9">
-          <div class="redes-sociais">
-            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
           </div>
         </div>
       </div>

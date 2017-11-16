@@ -20,6 +20,7 @@
 	<!-- Inicio do conteúdo -->
 	<main class="main-contato">
 		<div class="container">
+			<h1 class="titulo-principal">Contato</h1>
 			<!-- Classe "row" para dividir a tela em linhas e colunas para tornar mais responsivo -->
 			<div class="row">
 				<!-- Coluna vazia para deixar o conteúdo centralizado -->
@@ -32,7 +33,7 @@
 					<div class="contato-wrapper">
 						<!-- Div que contém o formulário de envio de mensagem -->				
 						<div class="container" id="div-formulario">
-							<h1 class="titulo-principal">Contato</h1>						
+													
 							<form class="contato-formulario">
 								<div class="form-row">
 								    <div class="form-group col-md-6" id="div-nome">
@@ -98,7 +99,6 @@
 	<script src="assets/js/jquery.js"></script>
 	<script src="https://use.fontawesome.com/6f8b7aea2d.js"></script>
 	<script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="assets/js/menu-navegacao.js"></script>
     <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script src="assets/bootstrap-3.3.7-dist/js/bootstrap-dropdown.js"></script>
 
