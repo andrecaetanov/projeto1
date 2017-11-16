@@ -2,23 +2,26 @@
 	footer {
 		border-top: 5px ridge #cb8733;
 		position: absolute;
-		width: 100%;
-		height: 60px;
-		bottom: 0;
+ 		bottom: 0;
+  		width: 100%;
 	}
-	
 
 	.footer-copyright {
 		background-color: #333333;
 		padding-top: 3px;
 		padding-bottom: 3px;	
 	}
+
 	.footer-copyright p {
 		color: #ccc;
 		text-align: center;
 	}
 	
-	.retornar-ao-topo{
-		display: inline-block;
+	html {
+  		position: relative;
+  		min-height: 100%;
 	}
 
+	body {
+		margin-bottom: 41px;
+	}

@@ -4,13 +4,15 @@
     <header>
       <nav id='cssmenu'>
         <div class="navbar-header">
-          <a class="navbar-brand nav-header"><img src="assets/img/Yoshis_Store_-_Logo.png"></a>
-          <div class="navbar-brand nav-header" id="logo">Yoshi's Store</div>
+          <a href="../index.php" class="navbar-brand nav-header"><img src="assets/img/Yoshis_Store_-_Logo.png"></a>
+          <div class="navbar-brand nav-header" id="logo">
+          <a href="../index.php">Yoshi's Store</a>
+          </div>
         </div>
         <div id="head-mobile"></div>
         <div class="button"></div>
         <ul class="conteudo">
-          <li><a href='produto-admin.php'>Home</a></li>
+          <li><a href='produto-admin.php'>Produtos</a></li>
           <li><a href='tipo-lista.php'>Tipos</a></li>
           <li><a href='plataforma-lista.php'>Plataformas</a>
           <li><a href='usuarios.php'>Usuários</a>

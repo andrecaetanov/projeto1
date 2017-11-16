@@ -2,11 +2,6 @@
   <!-- Rodapé -->
   <footer>
     <div class="footer-copyright">
-    	 <div class="retornar-ao-topo">
-        	<button type="button" class="btn btn-default btn-lg">
-          <i class="fa fa-angle-up fa-2x"></i>
-        </button>
-      </div>
       <p>Yoshi's Store © 2017 - TODOS OS DIREITOS RESERVADOS </p>
     </div>
   </footer>
