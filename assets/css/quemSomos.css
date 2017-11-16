@@ -1,20 +1,28 @@
-
 body {
 	background-color: #000000;
 }
-
-#quem-somos
-{
-	border-radius: 30px;
-	font-color: #000;
-	background-color: #FFFFFF;
-}
 .texto-institucional
 {
-	font-size: 120%;
+	border-radius: 12px;
+	background-color: rgb(29, 139, 29);
+	font-color: #000;
+	margin-bottom: 20px;
 }
-
+@media(min-width: 1024px) 
+{
+	.texto-institucional:hover
+	{
+		transform: scale(1.2);
+	}
+}
 #titulo
 {
+	color: rgb(29, 139, 29);
+	font-family: 'Bangers';
+	text-align: center;
+}
+.titulo-texto
+{
+	font-family: 'Bangers';
 	text-align: center;
 }
