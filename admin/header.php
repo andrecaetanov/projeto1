@@ -14,8 +14,11 @@
         <ul class="conteudo">
           <li><a href='produto-admin.php'>Produtos</a></li>
           <li><a href='tipo-lista.php'>Tipos</a></li>
-          <li><a href='plataforma-lista.php'>Plataformas</a>
-          <li><a href='usuarios.php'>Usuários</a>
+          <li><a href='plataforma-lista.php'>Plataformas</a></li>
+          <li><a href='usuarios.php'>Usuários</a></li>
+          <li id="logout">
+            <a href="../logout.php">Logout</a>
+          </li>
         </ul>
       </nav>
     </header>

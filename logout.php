@@ -3,3 +3,4 @@
  $_SESSION["success"] = "Deslogado com sucesso.";
  header("Location: login.php");
  die();
+ ?>
