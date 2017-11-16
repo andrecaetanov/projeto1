@@ -7,8 +7,8 @@
 
 </head>
 <body>
-	
-	<div class="container">
+	<div class="col-sm-4"></div>
+	<div class="container col-sm-8">
 		<div class="principal">
 			<?php error_reporting(E_ALL ^ E_NOTICE); 
 			require_once("loginLogica.php");
@@ -27,17 +27,17 @@
 			<?php } else { ?>
 			<h2>Login</h2>
 			<form action="loginAction.php" method="post">
-				<table class="table">
+				<table>
 					<tr>
 						<td>Login</td>
-						<td><input class="form-control" type="text" name="login"></td>
+						<td><input class="form" type="text" name="login"></td>
 					</tr>
 					<tr>
 						<td>Senha</td>
-						<td><input class="form-control" type="password" name="senha"></td>
+						<td><input class="form" type="password" name="senha"></td>
 					</tr>
 					<tr>
-						<td><button type="submit" class="btn btn-primary">Login</button></td>
+						<td><button type="submit" class="btn btn-success">Login</button></td>
 					</tr>
 				</table>
 			</form>
