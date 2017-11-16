@@ -1,29 +1,39 @@
 
 <html>
 <head>
+	<title>Login</title>
 	<meta charset="utf-8">
-	<title>Minha Loja</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-
+	<link rel="stylesheet" type="text/css" href="assets/css/login.css">
+	<link rel="shortcut icon" href="assets/img/logo/Yoshis_Store_-_Logo.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+	<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="assets/css/header.css">
+	<link rel="icon" href="assets/img/Yoshis_Store_-_Logo.png">
 </head>
 <body>
-	<div class="col-sm-4"></div>
-	<div class="container col-sm-8">
-		<div class="principal">
+	<?php
+	require_once ("header.php"); 
+	?>
+	<div class="login container">
+		<div class="col-sm-4">
+		</div>
+		<div class="col-sm-4 principal">
 			<?php error_reporting(E_ALL ^ E_NOTICE); 
 			require_once("loginLogica.php");
 			if(isset($_SESSION["success"])) { ?>
-				<p class="alert-success"><?= $_SESSION["success"]?></a>
-			<?php 
+			<p class="alert-success"><?= $_SESSION["success"]?></a>
+				<?php 
 				unset($_SESSION["success"]);
 			} ?>
 			<?php if(isset($_SESSION["danger"])) { ?>
-				<p class="alert-danger"><?= $_SESSION["danger"]?></a>
-			<?php 
+			<p class="alert-danger"><?= $_SESSION["danger"]?></a>
+				<?php 
 				unset($_SESSION["danger"]);
 			} ?>
 			<?php if(usuarioEstaLogado()) { ?>
-				<p class="text-success">Você esta logado como <?=usuarioLogado()?>.<a href="logout.php">Deslogar</a></p>
+			<p class="text-success">Você esta logado como <?=usuarioLogado()?>.<a href="logout.php">Deslogar</a></p>
 			<?php } else { ?>
 			<h2>Login</h2>
 			<form action="loginAction.php" method="post">
@@ -43,9 +53,14 @@
 			</form>
 			<?php } ?>
 		</div>
+		<div class="col-sm-4">
+		</div>
 	</div>
+	<div class = "aumento-footer"></div>
 
-
+	<?php
+	require_once ("footer.php"); 
+	?>
 </body>
 
 </html>
