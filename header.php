@@ -49,7 +49,7 @@
             </div>
           </li>
           <li>
-            <a href="login.php" class="glyphicon glyphicon-lock"></a>
+            <a href="login.php" class="glyphicon glyphicon-lock acesso-restrito"></a>
           </li>
         </ul>
       </nav>

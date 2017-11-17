@@ -4,38 +4,34 @@ body {
     
 }
 
-.main-contato {
-    padding-top: 2rem;
-}
-
-.main-contato div h1 {
-    color: #222;
-}
-
 .main-contato .titulo-principal {
     color: rgb(29, 139, 29);
     font-family: 'Bangers';
-    text-align: center;
-    margin-top: 3%;
-    font-size: 300%;  
+    text-align: center; 
 }
 
 .main-contato .contato-wrapper {
-    background-color: rgba(250,250,250, 0.7);
+    background-color: rgb(29, 139, 29);
     border-radius: 10px;
-    text-shadow: 0.04em 0.04em #ddd;
-    box-shadow: 0 0 1em #444;
     margin-bottom: 1.2em;
     padding: 0.5em 0;
+    font-family: 'Bangers';
+    letter-spacing: 0.1em;
 }
 
 .main-contato #contato-enviar {
     margin-bottom: 1.1em;
     float: right;
-    box-shadow: 0 0 1em #444;
+    box-shadow: 0 0 0.5em #444;
     margin-top: 1em;
-    background-color: #448D00;
+    background-color: #CC9900;
+    color: #222;
     border: 0;
+    letter-spacing: 0.1em;
+}
+
+.form-group .campo {
+    margin-top: 0.5em;
 }
 
 .main-contato .contato-formulario {
@@ -63,11 +59,11 @@ body {
 
 .main-contato .form-control {
     box-shadow: 0 0 1em #777;
+    letter-spacing: 0.1em;
 }
 
 .main-contato .div-contato {
     width: 100%;
-    text-shadow: 0.03em 0.03em #ddd;
     color: #222;
 }
 
@@ -98,9 +94,9 @@ body {
 }
 
 .main-contato #contato-mensagem {
-    resize: none;
+    resize: vertical;;
 }
 
 .main-contato .link-email {
-    color: #000;
+    color: #222;
 }

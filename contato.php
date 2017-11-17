@@ -38,24 +38,24 @@
 								<div class="form-row">
 								    <div class="form-group col-md-6" id="div-nome">
 									      <label for="contato-nome" class="col-form-label">Nome</label>
-									      <input type="text" class="form-control" id="contato-nome" placeholder="Nome" required>
+									      <input type="text" class="form-control" id="contato-nome" placeholder="Seu nome" required>
 								    </div>
 								    <div class="form-group col-md-6" id="div-email">
 									      <label for="contato-email" class="col-form-label">E-mail</label>
-									      <input type="email" class="form-control" id="contato-email" placeholder="E-mail" required>
+									      <input type="email" class="form-control" id="contato-email" placeholder="seu@email.com" required>
 								    </div>
 							  	</div>
 								<div class="form-group" id="div-assunto">
-									<label for="contato-assunto">Assunto</label>
+									<label for="contato-assunto" class="campo">Assunto</label>
 									<input id="contato-assunto" class="form-control" type="text" placeholder="Qual é o assunto?">
 								</div>
 
 								<div class="form-group" id="div-mensagem">
-									<label for="contato-mensagem">Mensagem</label>
+									<label for="contato-mensagem" class="campo">Mensagem</label>
 									<textarea id="contato-mensagem" class="form-control" type="text" placeholder="Digite a mensagem" rows="5" required></textarea>
 								</div>
 
-								<button type="submit" class="btn btn-primary" id="contato-enviar">Enviar</button>
+								<button type="submit" class="btn btn-success" id="contato-enviar">Enviar</button>
 							</form>
 						</div>
 						<!-- Div com as demais formas de contato -->
