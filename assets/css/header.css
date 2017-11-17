@@ -125,8 +125,8 @@ nav {
     transition:background .3s ease;
 }
 
-#cssmenu > ul  li:hover a .acesso-restrito {
-    background: #000 !important;
+#cssmenu > ul  .acesso-restrito:hover{
+    background: #333 !important;
 }
 
 #cssmenu > ul > li.has-sub > a {

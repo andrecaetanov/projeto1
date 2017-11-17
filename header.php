@@ -48,8 +48,8 @@
               </form>
             </div>
           </li>
-          <li>
-            <a href="login.php" class="glyphicon glyphicon-lock acesso-restrito"></a>
+          <li class="acesso-restrito">
+            <a href="login.php" class="glyphicon glyphicon-lock"></a>
           </li>
         </ul>
       </nav>
