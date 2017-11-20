@@ -28,6 +28,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Usuarios</title>
   <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/produto-admin.css">
   <link rel="stylesheet" type="text/css" href="assets/css/usuarios.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/header.css">
@@ -59,50 +60,56 @@
     <table class="table table-striped table-bordered table-hover">
       <thead>
         <tr>
-          <th>Id</th>
-          <th>Login</th>
-          <th colspan="2">Ação</th>
+          <th><center>Id</center></th>
+          <th><center>Login</center></th>
+          <th colspan="2"><center>Ação</center></th>
         </tr>
       </thead>
       <tbody>
-        <?php foreach($usuarios as $usuario) { 
-          $id = $usuario['id'];
-        ?>
-        <tr>
-          <td><?=$usuario['id']?></td>
-          <td><?=$usuario['login']?></td>
-          <td>
-            <a href="form-altera-usuario.php?id=<?=$usuario['id']?>"><i class="fa fa-pencil fa-lg"></i></a>
-          </td>
-          <td>
-          <?php $deletar = "deletar".$id; ?>
-              <center><a href="#<?= $deletar?>" class="glyphicon glyphicon-trash excluir" data-toggle="modal"  ></a></center>
-          </td>
-          <div id="<?=$deletar?>" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Atenção</h4>
-                </div>
-                <div class="modal-body">
-                    <p>Realmente quer deletar este usuario - '<?=$usuario['login']?>'?</p>
-                    <form action="deleta-usuario.php" method="post">
-                    <input type="hidden" name="id" value="<?=$usuario['id'] ?>">
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-danger">Sim</button>
-                    </form>
-                    <button type="submit" class="btn btn-primary" data-dismiss="modal">Fechar</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </tr>
-        <?php } ?>
-      </tbody>
+				<?php
+	
+				foreach($usuarios as $usuario) :
+					$id = $usuario['id'];
+					?>
+					<tr>
+						<td><?= $usuario['id'] ?></td>
+						<td><?= $usuario['login'] ?></td>
+						<td>
+							<form action="form-altera-usuario.php" method="post">
+								<input type="hidden" name="id" value="<?= $usuario['id'] ?>">
+								<center><input type="image" name="editar" class="glyphicon glyphicon-pencil editar" value=" " onClick="this.form.submit()"></center>
+							</form>
+						</td>
+						<td>
+							<?php $deletar = "deletar".$id; ?>
+							<center><a href="#<?= $deletar?>" class="glyphicon glyphicon-trash excluir" data-toggle="modal"  ></a></center>
+						</td>
+						<div id="<?=$deletar?>" class="modal fade" role="dialog">
+							<div class="modal-dialog">
+								<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">Atenção</h4>
+									</div>
+									<div class="modal-body">
+										<p>Realmente quer deletar este usuario - '<?= $usuario['login']?>'?</p>
+										<form action="deleta-usuario.php" method="post">
+											<input type="hidden" name="id" value="<?= $usuario['id'] ?>">
+										</div>
+										<div class="modal-footer">
+											<button class="btn btn-danger">Sim</button>
+										</form>
+										<button type="submit" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</tr>
+					<?php
+				endforeach
+				?>
+			</tbody>
     </table>
   </div>
 </div>
