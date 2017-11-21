@@ -33,7 +33,7 @@ ol, ul {
 	.footer-principal {
 		background:url(../img/misc/footer.jpg)  center;
 	}
-	@media(max-width: 991px){
+	@media(max-width: 1040px){
 		.footer-principal{
 		background:url(../img/misc/footermenor.jpg) no-repeat left top;
 		background-size: cover;

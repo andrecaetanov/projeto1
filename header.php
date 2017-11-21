@@ -38,13 +38,19 @@
           </li>
           <li><a href='localizacao.php'>Localização</a></li>
           <li><a href='contato.php'>Contato</a></li>
-          <li>
+          <li class="li-busca">
             <div class="form-group form-header">
+                 
               <form class="form-inline my-2 my-lg-0"  id="buscar">
-                <input class="form-control mr-sm-2 campo-busca container" type="text" placeholder="Buscar" aria-label="Search">
-                <button type="button" class="btn btn-default btn-busca" aria-label="Buscar" type="submit">
+           
+                <input class="form-control mr-sm-2 campo-busca container" name='nome' type="text" placeholder="Buscar" aria-label="Search">
+                  <?php if(isset($_GET['nome']))
+                  $nome = $_GET['nome'];
+                   else
+                   $nome = ""; ?> 
+                <a href="produtos.php?nome=<?=$nome?>"><button type="button" class="btn btn-default btn-busca" aria-label="Buscar" type="submit">
                   <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                </button>
+                </button></a>
               </form>
             </div>
           </li>

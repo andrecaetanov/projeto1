@@ -125,6 +125,11 @@ nav {
     transition:background .3s ease;
 }
 
+#cssmenu > ul  .li-busca:hover{
+    background: #333 !important;
+
+}
+
 #cssmenu > ul  .acesso-restrito:hover{
     background: #333 !important;
 }
