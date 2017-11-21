@@ -12,7 +12,7 @@
 
 <body>
 
-  <?php include("header.php")?>
+  <?php include("header.php");?>
   <div class="container">
     <h1>Novo Usuario</h1>
 
@@ -27,12 +27,13 @@
               <td><input class="form-control" type="password" name="senha"></td>
           </tr>
           <tr>
-              <td><button class="btn btn-primary">Cadastrar</td>
           </tr>
       </table>
-      </form>
-    </div>
+      <button class="btn btn-success">Cadastrar usuário</button>
+      <a href="usuarios.php"><input type="button" class="btn btn-primary" name="voltar" value="Voltar"></a>
+    </form>
+  </div>
 
-    <?php include("footer.php")?>
+    <?php include("footer.php");?>
 </body>
 </html>

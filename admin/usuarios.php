@@ -75,14 +75,14 @@
 						<td><?= $usuario['id'] ?></td>
 						<td><?= $usuario['login'] ?></td>
 						<td>
+							<?php $deletar = "deletar".$id; ?>
+							<center><a href="#<?= $deletar?>" class="glyphicon glyphicon-trash excluir" data-toggle="modal"  ></a></center>
+						</td>
+						<td>
 							<form action="form-altera-usuario.php" method="post">
 								<input type="hidden" name="id" value="<?= $usuario['id'] ?>">
 								<center><input type="image" name="editar" class="glyphicon glyphicon-pencil editar" value=" " onClick="this.form.submit()"></center>
 							</form>
-						</td>
-						<td>
-							<?php $deletar = "deletar".$id; ?>
-							<center><a href="#<?= $deletar?>" class="glyphicon glyphicon-trash excluir" data-toggle="modal"  ></a></center>
 						</td>
 						<div id="<?=$deletar?>" class="modal fade" role="dialog">
 							<div class="modal-dialog">

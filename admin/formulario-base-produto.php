@@ -58,7 +58,7 @@
   </tr>
   <tr>
     <td colspan="2">
-      <input type="file" name="pic" accept="image/*">
+      <input type="file" name="pic" accept="image/*" class="input-imagem">
     </td>
   </tr>
 </table>

@@ -33,7 +33,7 @@
 				unset($_SESSION["danger"]);
 			} ?>
 			<?php if(usuarioEstaLogado()) { ?>
-			<p class="text-success">Você esta logado como <?=usuarioLogado()?>.<a href="logout.php">Deslogar</a></p>
+			<p class="text-success">Você esta logado como <?=usuarioLogado()?>. <a href="admin/produto-admin.php">Acessar página de produtos.</a><br><a href="logout.php">Deslogar</a></p>
 			<?php } else { ?>
 			<h2>Login</h2>
 			<form action="loginAction.php" method="post">

@@ -1,3 +1,22 @@
+
+.container{
+	margin-bottom: 5%;
+}
+
+@media(max-width: 425px) {
+	.container {
+		margin-bottom: 25% !important;
+	}
+}
+
+@media(min-width: 426px) {
+	@media(max-width: 800px) {
+		.container {
+			margin-bottom: 10% !important;
+		}
+	}	
+}
+
 .principal-cadastra-produto, .principal-atualiza-produto {
 	padding-top: 4rem;
 	position: absolute;
@@ -36,7 +55,7 @@ table td {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 30%;
+	
 }
 
 .form-select {
@@ -60,4 +79,8 @@ table td {
 
 .form-group .select-plataforma {
 	width: auto;
+}
+
+.input-imagem {
+	font-size: 94%;
 }

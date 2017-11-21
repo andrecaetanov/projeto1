@@ -24,14 +24,14 @@ require_once("banco-plataforma.php"); ?>
 						<td><?= $plataforma['id'] ?></td>
 						<td><?= $plataforma['nome'] ?></td>
 						<td>
+							<?php $deletar = "deletar".$id; ?>
+							<center><a href="#<?= $deletar?>" class="glyphicon glyphicon-trash excluir" data-toggle="modal"  ></a></center>
+						</td>
+						<td>
 							<form action="plataforma-altera-formulario.php" method="post">
 								<input type="hidden" name="id" value="<?= $plataforma['id'] ?>">
 								<center><input type="image" name="editar" class="glyphicon glyphicon-pencil editar" value=" " onClick="this.form.submit()"></center>
 							</form>
-						</td>
-						<td>
-							<?php $deletar = "deletar".$id; ?>
-							<center><a href="#<?= $deletar?>" class="glyphicon glyphicon-trash excluir" data-toggle="modal"  ></a></center>
 						</td>
 						<div id="<?=$deletar?>" class="modal fade" role="dialog">
 							<div class="modal-dialog">
