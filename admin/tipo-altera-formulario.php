@@ -13,7 +13,8 @@ $tipo = buscaTipo($conexao, $id);
         <?php include("tipo-formulario-base.php"); ?>
 
         <tr>
-            <td><button class="btn btn-primary" type="submit">Alterar</button></td>
+            <td><button class="btn btn-success" type="submit">Alterar Tipo</button></td>
+			<td><a href="tipo-lista.php"><input type="button" class="btn btn-primary" name="voltar" value="Voltar"></a></td>
         </tr>
     </table>
 </form>
