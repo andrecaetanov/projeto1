@@ -17,7 +17,7 @@
 	<section id="quem-somos" class="container">
 		<!-- Inicio do texto institucional -->
 		<h1 id="titulo">Sobre Nós</h1>
-		<img class="img-responsive col-sm-6" src="/assets/img/Yoshis_Store_-_Logo.png" alt="Logo da empresa">
+		<img class="img-responsive col-sm-6" src="assets/img/Yoshis_Store_-_Logo.png" alt="Logo da empresa">
 		<div class="col-sm-6">
 			<div class="texto-institucional container col-sm-12">		
 				<h2 class="titulo-texto">Missão</h2>

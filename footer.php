@@ -11,7 +11,7 @@
           <i class="fa fa-angle-up fa-2x"></i>
         </button>
         </div>
-        <div class="col-md-2 col-md-offset-1">
+        <div class="col-md-2  ">
           <div class="menu">
             <h5>Navegação</h5>
             <ul>
@@ -23,7 +23,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-2 col-md-offset-5">
+        <div class="col-md-2 col-md-offset-7">
           <div class="menu">
             <h5>Informações</h5>
             <ul>

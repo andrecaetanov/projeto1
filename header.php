@@ -41,16 +41,16 @@
           <li class="li-busca">
             <div class="form-group form-header">
                  
-              <form class="form-inline my-2 my-lg-0"  id="buscar">
+              <form class="form-inline my-2 my-lg-0" action="produtos.php"  id="buscar" method="get" role="form">
            
                 <input class="form-control mr-sm-2 campo-busca container" name='nome' type="text" placeholder="Buscar" aria-label="Search">
                   <?php if(isset($_GET['nome']))
                   $nome = $_GET['nome'];
                    else
                    $nome = ""; ?> 
-                <a href="produtos.php?nome=<?=$nome?>"><button type="button" class="btn btn-default btn-busca" aria-label="Buscar" type="submit">
+                <button type="button" class="btn btn-default btn-busca" aria-label="Buscar" >
                   <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                </button></a>
+                </button>
               </form>
             </div>
           </li>

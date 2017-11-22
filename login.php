@@ -1,4 +1,3 @@
-
 <html>
 <head>
 	<title>Login</title>
@@ -14,13 +13,14 @@
 </head>
 <body>
 	<?php
+	
 	require_once ("header.php"); 
 	?>
 	<div class="login container">
 		<div class="col-sm-4">
 		</div>
 		<div class="col-sm-4 principal">
-			<?php error_reporting(E_ALL ^ E_NOTICE); 
+			<?php  
 			require_once("loginLogica.php");
 			if(isset($_SESSION["success"])) { ?>
 			<p class="alert-success"><?= $_SESSION["success"]?></a>
