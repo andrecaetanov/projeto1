@@ -7,7 +7,9 @@
   <link rel="stylesheet" href="assets/css/header.css">
   <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
   <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
-  <title>Novo Usuario</title>
+  <link rel="icon" href="assets/img/Yoshis_Store_-_Logo.png">
+    <link rel="stylesheet" type="text/css" href="assets/css/font.css">
+    <title>Yoshi's Store</title>
 </head>
 
 <?php
@@ -15,7 +17,7 @@
   include("../conexao.php");
   include("../funcoes-banco.php");
 
-  $id = $_GET['id'];
+  $id = $_POST['id'];
   $usuario = getUsuarioPeloId($conexao, $id);
 
   
@@ -38,10 +40,9 @@
               <td>Senha (Encriptada)</td>
               <td><input class="form-control" type="password" name="senha" value="<?=$usuario['senha']?>"></td>
           </tr>
-          <tr>
-              <td><button class="btn btn-primary">Alterar</td>
-          </tr>
       </table>
+      <button class="btn btn-success">Alterar usuário</button>
+      <a href="usuarios.php"><input type="button" class="btn btn-primary" name="voltar" value="Voltar"></a>
       </form>
     </div>
 

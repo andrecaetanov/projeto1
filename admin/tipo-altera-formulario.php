@@ -13,9 +13,10 @@ $tipo = buscaTipo($conexao, $id);
         <?php include("tipo-formulario-base.php"); ?>
 
         <tr>
-            <td><button class="btn btn-primary" type="submit">Alterar</button></td>
         </tr>
     </table>
+    <button class="btn btn-success" type="submit">Alterar tipo</button>
+	<a href="tipo-lista.php"><input type="button" class="btn btn-primary" name="voltar" value="Voltar"></a>
 </form>
 
 <?php require_once("rodape.php"); ?>

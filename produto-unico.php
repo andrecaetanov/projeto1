@@ -14,8 +14,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/produto-unico.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font.css">
   <?php include("head-navbar-footer.php");  ?>
-  <title><?=$produto['nome']?></title>
+  <title>Yoshi's Store</title>
 
 
 

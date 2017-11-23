@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">	
 	<link rel="stylesheet" type="text/css" href="assets/css/contato.css">	
     <link rel="stylesheet" type="text/css" href="assets/css/header.css">
-	<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="assets/css/font.css">
 	
 	<title>Yoshi's Store</title>
 </head>

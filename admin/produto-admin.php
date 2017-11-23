@@ -15,7 +15,9 @@ require_once("consulta-banco.php");
     <link rel="stylesheet" type="text/css" href="assets/css/header.css">
     <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
-    <title>Produtos Admin</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/font.css">
+    <link rel="icon" href="assets/img/Yoshis_Store_-_Logo.png">
+    <title>Yoshi's Store</title>
 
 </head>
 <body>
