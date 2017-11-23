@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/header.css">
 	<link rel="icon" href="assets/img/Yoshis_Store_-_Logo.png">
     <link rel="stylesheet" type="text/css" href="assets/css/font.css">
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<?php

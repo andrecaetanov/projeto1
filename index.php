@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/footer.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/header.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font.css">
-	<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+	<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
 <body class="pagina-inicial">
