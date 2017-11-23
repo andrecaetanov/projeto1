@@ -23,8 +23,9 @@ $disponivel = $produto['disponivel'] ? "checked='checked'" : "";
     <link rel="stylesheet" type="text/css" href="assets/css/header.css">
     <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
     <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
-
-	<title>Editar Produto</title>
+	<link rel="icon" href="assets/img/Yoshis_Store_-_Logo.png">
+    <link rel="stylesheet" type="text/css" href="assets/css/font.css">
+    <title>Yoshi's Store</title>
 </head>
 <body>
 	

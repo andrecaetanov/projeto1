@@ -13,10 +13,10 @@ $plataforma = buscaPlataforma($conexao, $id);
         <?php include("plataforma-formulario-base.php"); ?>
 
         <tr>
-            <td><button class="btn btn-success" type="submit">Alterar Plataforma</button></td>
-			<td><a href="plataforma-lista.php"><input type="button" class="btn btn-primary" name="voltar" value="Voltar"></a></td>
         </tr>
     </table>
+    <button class="btn btn-success" type="submit">Alterar plataforma</button>
+	<a href="plataforma-lista.php"><input type="button" class="btn btn-primary" name="voltar" value="Voltar"></a>
 </form>
 
 <?php require_once("rodape.php"); ?>

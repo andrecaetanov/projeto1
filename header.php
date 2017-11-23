@@ -48,8 +48,8 @@
                   $nome = $_GET['nome'];
                    else
                    $nome = ""; ?> 
-                <button type="button" class="btn btn-default btn-busca" aria-label="Buscar" >
-                  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                <button type="button" class="btn btn-default btn-busca" aria-label="Buscar" onClick="this.form.submit()">
+                  <span class="glyphicon glyphicon-search" aria-hidden="true" ></span>
                 </button>
               </form>
             </div>

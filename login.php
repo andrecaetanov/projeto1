@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Login</title>
+	<title>Yoshi's Store</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
@@ -10,6 +10,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="assets/css/header.css">
 	<link rel="icon" href="assets/img/Yoshis_Store_-_Logo.png">
+    <link rel="stylesheet" type="text/css" href="assets/css/font.css">
 </head>
 <body>
 	<?php
@@ -33,7 +34,9 @@
 				unset($_SESSION["danger"]);
 			} ?>
 			<?php if(usuarioEstaLogado()) { ?>
-			<p class="text-success">Você esta logado como <?=usuarioLogado()?>. <a href="admin/produto-admin.php">Acessar página de produtos.</a><br><a href="logout.php">Deslogar</a></p>
+			<p class="text-success">Você esta logado como <?=usuarioLogado()?>. <br>
+			<a href="admin/produto-admin.php">Acessar página de produtos.</a><br>
+			<a href="logout.php">Deslogar</a></p>
 			<?php } else { ?>
 			<h2>Login</h2>
 			<form action="loginAction.php" method="post">
