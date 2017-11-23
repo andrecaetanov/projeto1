@@ -148,6 +148,8 @@
 
 	.img-responsive{
 		display: inline-block;
+		width:342px;
+		height: 342px;
 	}
 
 	ol, ul {

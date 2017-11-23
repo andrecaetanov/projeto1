@@ -79,7 +79,7 @@
 											<div class="caixa-produtos">
 												<span></span>
 												<p><a href="produto-unico.php?id=<?=$produto['id']?>"><img src="<?= $produto['imagem']?>" alt=<?= $produto['nome']?> class="img-responsive" /></a></p>
-												<a href="#" class="titulo"><?= $produto['nome']?></a><br/>
+												<a href="produto-unico.php?id=<?=$produto['id']?>" class="titulo"><?= $produto['nome']?></a><br/>
 												<?php
 												if($produto['tipo_nome']=="Console") :
 													?>
