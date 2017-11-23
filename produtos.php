@@ -107,7 +107,7 @@
     
     
     <select name="plataforma" class="form-control combobox-console col-sm-3">
-      <option value="0">Console</option>
+      <option value="0">Plataforma</option>
       <?php foreach($categorias as $categoria) { ?>
       <option value=<?=$categoria['id']?>><?=$categoria['nome']?></option>
       <?php } ?>
