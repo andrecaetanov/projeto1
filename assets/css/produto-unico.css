@@ -4,6 +4,7 @@ body{
 
 .row{
   margin-left: 5%;
+  margin-right: 5%;
 }
 
 #imagem-jogo{
@@ -54,6 +55,6 @@ body{
 
 .descricao{
   color: #ffffff;
-  
+  text-align: justify;
   
 }
