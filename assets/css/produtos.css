@@ -14,10 +14,9 @@
 
 .img-responsive{
     display: inline-block;
-    width:342px;
-    height: 342px;
+    height: 200px;
+    width: 250px;
 }
-
 
 #retangulo{
     border: 1px transparent #FFF;
