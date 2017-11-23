@@ -5,6 +5,7 @@
         <link rel="stylesheet" type="text/css" href="assets/css/pagina-localizacao.css">
         <link rel="stylesheet" type="text/css" href="assets/css/font.css">
         <meta name="viewport" content="width = device-width, initial-scale = 1">
+        <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
         <title>Yoshi's Store</title>
         
         <?php include("head-navbar-footer.php"); ?>

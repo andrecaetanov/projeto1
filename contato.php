@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/contato.css">	
     <link rel="stylesheet" type="text/css" href="assets/css/header.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font.css">
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
 	
 	<title>Yoshi's Store</title>
 </head>
